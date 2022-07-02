@@ -2,27 +2,35 @@
 
 syntax on
 
-set tabstop=4 
+set termguicolors
+set tabstop=4
 set softtabstop=4
-set shiftwidth=4
+set expandtab
 set smartindent
+set shiftwidth=4
 set number
-set numberwidth=1
-set relativenumber
+set numberwidth=4
+set incsearch
+set nohlsearch
+set splitbelow
+set splitright
+set hidden
+set scrolloff=8
+set undofile
 set mouse=a
+set ignorecase
+set smartcase
 
 " --- Plugins
 
 call plug#begin('~/.config/nvim/plugged')
 
-" General
 Plug 'morhetz/gruvbox'
 
 call plug#end()
 
+
 "--- Colors
 
-set background=dark
-set termguicolors
 colorscheme gruvbox
 
