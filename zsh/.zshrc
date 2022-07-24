@@ -25,7 +25,7 @@ source ~/.zsh_plugins.sh
 #aliases
 alias vim="nvim"
 alias ls="ls -la"
-
+alias wsl="cd /mnt/d/wsl"
 
 #zsh-autosuggestions keybind
 bindkey '	' autosuggest-accept
@@ -33,4 +33,5 @@ bindkey '	' autosuggest-accept
 #settings 
 unsetopt BEEP
 
-
+#sets default starting directory
+cd /mnt/d/wsl
