@@ -26,6 +26,7 @@ source ~/.zsh_plugins.sh
 alias vim="nvim"
 alias ls="ls -la"
 alias wsl="cd /mnt/d/wsl"
+alias c="clear"
 
 #zsh-autosuggestions keybind
 bindkey '	' autosuggest-accept
