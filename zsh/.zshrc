@@ -27,6 +27,7 @@ alias vim="nvim"
 alias ls="ls -la"
 alias wsl="cd /mnt/d/wsl"
 alias c="clear"
+alias n="cd ~/.config/nvim"
 
 #zsh-autosuggestions keybind
 bindkey '	' autosuggest-accept
