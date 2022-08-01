@@ -16,8 +16,15 @@ compinit
 if [ -e ~/.nix-profile/etc/profile.d/nix.sh ]; then . ~/.nix-profile/etc/profile.d/nix.sh; fi
 
 
-#source plugins 
-source ~/.zsh_plugins.sh
+#get antidote
+[[ -e ~/.antidote ]] || git clone https://github.com/mattmc3/antidote.git ~/.antidote
+
+# source antidote
+. ~/.antidote/antidote.zsh
+
+# generate and source plugins from ~/.zsh_plugins.txt
+antidote load
+
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
@@ -28,9 +35,12 @@ alias ls="ls -la"
 alias wsl="cd /mnt/d/wsl"
 alias c="clear"
 alias n="cd ~/.dotfiles/nvim/.config/nvim"
+alias d="cd ~/.dotfiles"
 
 #zsh-autosuggestions keybind
 bindkey '	' autosuggest-accept
+bindkey '^[[A' history-substring-search-up
+bindkey '^[[B' history-substring-search-down
 
 #settings 
 unsetopt BEEP
@@ -53,3 +63,5 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
+
+if [ -e /home/patatone/.nix-profile/etc/profile.d/nix.sh ]; then . /home/patatone/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
