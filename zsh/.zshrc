@@ -39,8 +39,8 @@ alias d="cd ~/.dotfiles"
 
 #zsh-autosuggestions keybind
 bindkey '	' autosuggest-accept
-bindkey '^[[A' history-substring-search-up
-bindkey '^[[B' history-substring-search-down
+bindkey '[' history-substring-search-up
+bindkey ']' history-substring-search-down
 
 #settings 
 unsetopt BEEP
