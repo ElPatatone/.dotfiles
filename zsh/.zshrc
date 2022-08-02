@@ -36,7 +36,7 @@ alias wsl="cd /mnt/d/wsl"
 alias c="clear"
 alias n="cd ~/.dotfiles/nvim/.config/nvim"
 alias d="cd ~/.dotfiles"
-
+alias u="cd ~/.dotfiles/nvim/.config/nvim/lua/user"
 #zsh-autosuggestions keybind
 bindkey '	' autosuggest-accept
 bindkey '[' history-substring-search-up
