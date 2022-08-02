@@ -13,4 +13,4 @@ You don't have to install anything before running the `install.sh` script but ma
 2. Make the `install.sh` file executable with the command `chmod +x install.sh` and then run it.
 3. Create a new terminal session to allow the changes to take place and go through the powerlevel10k set up.
 4. Open neovim and let packer install all the plugins, you might get an error saying `gruvbox colorscheme not found`, but don't worry it will fix itself the next time you open neovim.
-5. You are ready to roll! Enjoy your freshly set up development environment :)
+5. You are ready to roll! Enjoy your freshly set up development environment :grin:
