@@ -22,10 +22,10 @@ local options = {
   tabstop = 4,                             -- insert 2 spaces for a tab
   number = true,                           -- set numbered lines
   relativenumber = true,                  -- set relative numbered lines
-  numberwidth = 4,                         -- set number column width to 2 {default 4}
   wrap = false,                            -- display lines as one long line
   scrolloff = 8,                           -- is one of my fav
   sidescrolloff = 8,
+  signcolumn = "yes",
 }
 
 vim.opt.shortmess:append "c"
