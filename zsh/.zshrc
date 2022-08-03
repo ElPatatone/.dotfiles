@@ -44,7 +44,7 @@ alias u="cd ~/.dotfiles/nvim/.config/nvim/lua/user"
 #git commands
 alias gs="git status"
 alias ga="git add"
-alias ga ="git add ."
+alias gaa ="git add ."
 alias gc="git commit"
 alias gcm="git commit -m"
 alias gco="git checkout"
