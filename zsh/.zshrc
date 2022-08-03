@@ -56,6 +56,7 @@ alias gll="git log --oneline"
 alias gd="git diff"
 alias gdel="git branch -D"
 alias glf=" git log --graph --pretty=format:'%C(italic yellow)%ad%Creset %C(green)<%an> %C(bold magenta)%h%Creset -%C(auto)%d %Creset %s %Creset' --date=format-local:'%Y-%m-%d %H:%M (%a)'"
+
 #zsh-autosuggestions keybind
 bindkey '	' autosuggest-accept
 bindkey '[' history-substring-search-up

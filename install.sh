@@ -7,12 +7,10 @@ curl -L https://nixos.org/nix/install | sh
 # install packages
 nix-env -iA \
 	nixpkgs.zsh \
-	nixpkgs.antibody \
 	nixpkgs.git \
 	nixpkgs.neovim \
 	nixpkgs.tmux \
 	nixpkgs.stow \
-	nixpkgs.yarn \
 	nixpkgs.fzf \
 	nixpkgs.bat \
 
