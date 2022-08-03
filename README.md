@@ -3,11 +3,19 @@
 A repository dedicated to easily maintain all my config files for apps I use.  
 It also has an install script which when run will set up an already heavily customised developement environment based on the config files
 
+I use this with `wsl` while running `Ubuntu 20.04.4`.
 ## How to use this
 
-You don't have to install anything before running the `install.sh` script but make sure your system is upto date by running the commands `sudo apt update` and then `sudo apt upgrade`.
+### Requirements
 
-#### Steps
+> #### **_A linux system is needed to use this configuration!_**  
+If using Windows, set up `wsl` with the `windows terminal` to use any of the available linux distros on the microsoft store without needing to dualboot.  
+
+There is no required software you have to install before running the `install.sh` 
+But make sure your system is upto date by running the commands `sudo apt update` and then `sudo apt upgrade`.
+
+
+### Steps for installation
 
 1. Clone the repository
 2. Make the `install.sh` file executable with the command `chmod +x install.sh` and then run it.
