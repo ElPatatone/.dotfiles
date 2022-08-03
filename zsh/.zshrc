@@ -29,14 +29,6 @@ antidote load
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-#aliases
-alias vim="nvim"
-alias ls="ls -la"
-alias wsl="cd /mnt/d/wsl"
-alias c="clear"
-alias n="cd ~/.dotfiles/nvim/.config/nvim"
-alias d="cd ~/.dotfiles"
-alias u="cd ~/.dotfiles/nvim/.config/nvim/lua/user"
 #zsh-autosuggestions keybind
 bindkey '	' autosuggest-accept
 bindkey '[' history-substring-search-up
@@ -65,3 +57,31 @@ unset __conda_setup
 
 
 if [ -e /home/patatone/.nix-profile/etc/profile.d/nix.sh ]; then . /home/patatone/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
+
+#aliases
+#system shortcuts
+alias vim="nvim"
+alias ls="ls -la"
+alias c="clear"
+
+#shortcut for a directory
+alias wsl="cd /mnt/d/wsl"
+alias n="cd ~/.dotfiles/nvim/.config/nvim"
+alias d="cd ~/.dotfiles"
+alias u="cd ~/.dotfiles/nvim/.config/nvim/lua/user"
+
+#git commands
+alias gs="git status"
+alias ga="git add"
+alias ga .="git add ."
+alias gc="git commit"
+alias gcm="git commit -m"
+alias gco="git checkout"
+alias gb="git branch"
+alias gcb="git checkout -b"
+alias gp="git push"
+alias gl="git log"
+alias gll="git log --oneline"
+alias gd="git diff"
+alias gdel="git branch -D"
+
