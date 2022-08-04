@@ -24,6 +24,4 @@ command -v zsh | sudo tee -a /etc/shells
 #make zsh the default shell
 sudo chsh -s $(which zsh) $USER
 
-#bundle zsh plugins 
-antibody bundle < ~/.zsh_plugins.txt > ~/.zsh_plugins.sh
 
