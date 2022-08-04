@@ -11,7 +11,14 @@ I rely on two main programs to make this work, the `nix package manager` lets me
 ## What's in it?
 
 Nix will install the following programs once the `install.sh` script runs:
-- 
+- `zsh` 
+- `git`
+- `neovim` 
+- `tmux`
+- `stow`
+- `fzf`
+- `bat`
+
 ## How to use this
 
 ### Requirements
