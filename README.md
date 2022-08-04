@@ -11,13 +11,13 @@ I rely on two main programs to make this work, the `nix package manager` lets me
 ## What's in it?
 
 Nix will install the following programs once the `install.sh` script runs:
-- `zsh` 
-- `git`
-- `neovim` 
-- `tmux`
-- `stow`
-- `fzf`
-- `bat`
+- `zsh` (I use `antidote` as the plugin manager for the zsh shell) 
+- `git` (I think you know what this is)
+- `neovim` (my text editor of choice because it's cool) 
+- `tmux` (window manager)
+- `GNU stow` (used to simlink all the files and make it easy to manage)
+- `fzf` (easily search for files while in the command line)
+- `bat` (cat command but on steroids)
 
 ## How to use this
 
