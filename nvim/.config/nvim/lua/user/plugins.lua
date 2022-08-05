@@ -51,7 +51,9 @@ return packer.startup(function(use)
   
   --colorschemes
   use "ellisonleao/gruvbox.nvim"
-  
+  use 'rockerBOO/boo-colorscheme-nvim' 
+  use 'techtuner/aura-neovim'
+
   -- cmp plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin
   use "hrsh7th/cmp-buffer" -- buffer completions
