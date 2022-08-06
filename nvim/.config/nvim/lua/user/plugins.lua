@@ -51,7 +51,6 @@ return packer.startup(function(use)
   
   --colorschemes
   use "ellisonleao/gruvbox.nvim"
-  use 'rockerBOO/boo-colorscheme-nvim' 
   use 'techtuner/aura-neovim'
 
   -- cmp plugins
