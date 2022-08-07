@@ -13,7 +13,8 @@ nix-env -iA \
 	nixpkgs.stow \
 	nixpkgs.fzf \
 	nixpkgs.bat \
-
+	nixpkgs.unzip \
+    
 # stow
 stow zsh
 stow nvim

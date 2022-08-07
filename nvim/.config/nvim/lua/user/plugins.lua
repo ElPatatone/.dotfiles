@@ -38,9 +38,6 @@ packer.init {
   },
 }
 
-
-
-
 -- Install your plugins here
 return packer.startup(function(use)
   -- My plugins here
@@ -51,7 +48,10 @@ return packer.startup(function(use)
   
   --colorschemes
   use "ellisonleao/gruvbox.nvim"
-  use 'techtuner/aura-neovim'
+
+  -- LSP
+  use "neovim/nvim-lspconfig" -- enable LSP
+  use "williamboman/nvim-lsp-installer" -- simple to use language server nvim-lsp-installer
 
   -- cmp plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin
@@ -76,9 +76,6 @@ return packer.startup(function(use)
   --git
   use"lewis6991/gitsigns.nvim" 
 
-  -- LSP
-  use "neovim/nvim-lspconfig" -- enable LSP
-  use "williamboman/nvim-lsp-installer" -- simple to use language server nvim-lsp-installer
 
 
 
