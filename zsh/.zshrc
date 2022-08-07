@@ -41,6 +41,14 @@ alias n="cd ~/.dotfiles/nvim/.config/nvim"
 alias d="cd ~/.dotfiles"
 alias u="cd ~/.dotfiles/nvim/.config/nvim/lua/user"
 
+#conda
+alias ca="conda activate"
+alias dc="conda deactivate"
+alias cc="conda create --name"
+alias cr="conda env remove --name"
+alias ce="conda env list"
+alias cl="conda list"
+
 #git commands
 alias gs="git status"
 alias ga="git add"
