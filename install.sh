@@ -24,4 +24,11 @@ command -v zsh | sudo tee -a /etc/shells
 #make zsh the default shell
 sudo chsh -s $(which zsh) $USER
 
+#installing nvm
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+#insatll npm
+nvm install node
 
+#commands to remove nvm if needed
+#nvm deactivate
+#nvm unload
