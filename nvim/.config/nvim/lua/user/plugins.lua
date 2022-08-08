@@ -49,6 +49,7 @@ return packer.startup(function(use)
   --nice to haves
   use "lukas-reineke/indent-blankline.nvim"
   use "nvim-lualine/lualine.nvim"
+  use "kyazdani42/nvim-web-devicons"
 
   --colorschemes
   use "ellisonleao/gruvbox.nvim"
