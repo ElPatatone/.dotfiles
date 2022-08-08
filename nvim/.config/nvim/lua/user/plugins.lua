@@ -46,22 +46,34 @@ return packer.startup(function(use)
   use "nvim-lua/popup.nvim" -- An implementation of the Popup API from vim in Neovim
   use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
   
+  --nice to haves
+  use "lukas-reineke/indent-blankline.nvim"
+  use "nvim-lualine/lualine.nvim"
+
   --colorschemes
   use "ellisonleao/gruvbox.nvim"
 
   -- LSP
   use "neovim/nvim-lspconfig" -- enable LSP
-  use "williamboman/nvim-lsp-installer" -- simple to use language server nvim-lsp-installer
+  use "williamboman/mason.nvim"
+  use "williamboman/mason-lspconfig.nvim"
+  use "jose-elias-alvarez/null-ls.nvim" -- for formatters and linters
+  use "ray-x/lsp_signature.nvim"
+  use "SmiteshP/nvim-navic"
+  use "RRethy/vim-illuminate"
+  use "j-hui/fidget.nvim"
+  use "lvimuser/lsp-inlayhints.nvim"
+  -- use "simrat39/inlay-hints.nvim"
+  use "https://git.sr.ht/~whynothugo/lsp_lines.nvim"
 
-  -- cmp plugins
-  use "hrsh7th/nvim-cmp" -- The completion plugin
+  -- Completion
+  use "christianchiarulli/nvim-cmp"
   use "hrsh7th/cmp-buffer" -- buffer completions
   use "hrsh7th/cmp-path" -- path completions
   use "hrsh7th/cmp-cmdline" -- cmdline completions
   use "saadparwaiz1/cmp_luasnip" -- snippet completions
   use "hrsh7th/cmp-nvim-lsp"
   use "hrsh7th/cmp-nvim-lua"
-
 
   -- snippets
   use "L3MON4D3/LuaSnip" --snippet engine

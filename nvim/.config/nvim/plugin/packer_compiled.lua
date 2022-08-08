@@ -104,6 +104,11 @@ _G.packer_plugins = {
     path = "/home/patatone/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
+  ["fidget.nvim"] = {
+    loaded = true,
+    path = "/home/patatone/.local/share/nvim/site/pack/packer/start/fidget.nvim",
+    url = "https://github.com/j-hui/fidget.nvim"
+  },
   ["friendly-snippets"] = {
     loaded = true,
     path = "/home/patatone/.local/share/nvim/site/pack/packer/start/friendly-snippets",
@@ -119,25 +124,65 @@ _G.packer_plugins = {
     path = "/home/patatone/.local/share/nvim/site/pack/packer/start/gruvbox.nvim",
     url = "https://github.com/ellisonleao/gruvbox.nvim"
   },
+  ["indent-blankline.nvim"] = {
+    loaded = true,
+    path = "/home/patatone/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",
+    url = "https://github.com/lukas-reineke/indent-blankline.nvim"
+  },
+  ["lsp-inlayhints.nvim"] = {
+    loaded = true,
+    path = "/home/patatone/.local/share/nvim/site/pack/packer/start/lsp-inlayhints.nvim",
+    url = "https://github.com/lvimuser/lsp-inlayhints.nvim"
+  },
+  ["lsp_lines.nvim"] = {
+    loaded = true,
+    path = "/home/patatone/.local/share/nvim/site/pack/packer/start/lsp_lines.nvim",
+    url = "https://git.sr.ht/~whynothugo/lsp_lines.nvim"
+  },
+  ["lsp_signature.nvim"] = {
+    loaded = true,
+    path = "/home/patatone/.local/share/nvim/site/pack/packer/start/lsp_signature.nvim",
+    url = "https://github.com/ray-x/lsp_signature.nvim"
+  },
+  ["lualine.nvim"] = {
+    loaded = true,
+    path = "/home/patatone/.local/share/nvim/site/pack/packer/start/lualine.nvim",
+    url = "https://github.com/nvim-lualine/lualine.nvim"
+  },
   ["markdown-preview.nvim"] = {
     loaded = true,
     path = "/home/patatone/.local/share/nvim/site/pack/packer/start/markdown-preview.nvim",
     url = "https://github.com/iamcco/markdown-preview.nvim"
   },
+  ["mason-lspconfig.nvim"] = {
+    loaded = true,
+    path = "/home/patatone/.local/share/nvim/site/pack/packer/start/mason-lspconfig.nvim",
+    url = "https://github.com/williamboman/mason-lspconfig.nvim"
+  },
+  ["mason.nvim"] = {
+    loaded = true,
+    path = "/home/patatone/.local/share/nvim/site/pack/packer/start/mason.nvim",
+    url = "https://github.com/williamboman/mason.nvim"
+  },
+  ["null-ls.nvim"] = {
+    loaded = true,
+    path = "/home/patatone/.local/share/nvim/site/pack/packer/start/null-ls.nvim",
+    url = "https://github.com/jose-elias-alvarez/null-ls.nvim"
+  },
   ["nvim-cmp"] = {
     loaded = true,
     path = "/home/patatone/.local/share/nvim/site/pack/packer/start/nvim-cmp",
-    url = "https://github.com/hrsh7th/nvim-cmp"
-  },
-  ["nvim-lsp-installer"] = {
-    loaded = true,
-    path = "/home/patatone/.local/share/nvim/site/pack/packer/start/nvim-lsp-installer",
-    url = "https://github.com/williamboman/nvim-lsp-installer"
+    url = "https://github.com/christianchiarulli/nvim-cmp"
   },
   ["nvim-lspconfig"] = {
     loaded = true,
     path = "/home/patatone/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
+  },
+  ["nvim-navic"] = {
+    loaded = true,
+    path = "/home/patatone/.local/share/nvim/site/pack/packer/start/nvim-navic",
+    url = "https://github.com/SmiteshP/nvim-navic"
   },
   ["packer.nvim"] = {
     loaded = true,
@@ -153,6 +198,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/patatone/.local/share/nvim/site/pack/packer/start/popup.nvim",
     url = "https://github.com/nvim-lua/popup.nvim"
+  },
+  ["vim-illuminate"] = {
+    loaded = true,
+    path = "/home/patatone/.local/share/nvim/site/pack/packer/start/vim-illuminate",
+    url = "https://github.com/RRethy/vim-illuminate"
   }
 }
 
