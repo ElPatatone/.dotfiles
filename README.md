@@ -18,6 +18,12 @@ Nix will install the following programs once the `install.sh` script runs:
 - `GNU stow` (used to simlink all the files and make it easy to manage)
 - `fzf` (easily search for files while in the command line)
 - `bat` (cat command but on steroids)
+- `unzip` (unzipping tool) 
+
+Things installed without nix:
+- `nvm` (node version manager)
+- `npm` (installed through nvm to easily manage)
+- `win32yank.exe` (system clipping tool that works in nvim as well)
 
 ## How to use this
 
