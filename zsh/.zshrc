@@ -50,6 +50,7 @@ alias ce="conda env list"
 alias cl="conda list"
 
 #git commands
+alias gf="git fork"
 alias gs="git status"
 alias ga="git add"
 alias gc="git commit"
