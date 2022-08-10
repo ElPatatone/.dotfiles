@@ -56,6 +56,7 @@ return packer.startup(function(use)
   --colorschemes
   use "ellisonleao/gruvbox.nvim"
   use "matsuuu/pinkmare"
+  use "bluz71/vim-moonfly-colors"
 
   -- LSP
   use "neovim/nvim-lspconfig" -- enable LSP

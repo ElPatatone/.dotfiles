@@ -223,6 +223,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/patatone/.local/share/nvim/site/pack/packer/start/vim-illuminate",
     url = "https://github.com/RRethy/vim-illuminate"
+  },
+  ["vim-moonfly-colors"] = {
+    loaded = true,
+    path = "/home/patatone/.local/share/nvim/site/pack/packer/start/vim-moonfly-colors",
+    url = "https://github.com/bluz71/vim-moonfly-colors"
   }
 }
 
