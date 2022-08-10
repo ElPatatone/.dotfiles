@@ -7,4 +7,5 @@ require('user.gitsigns')
 require('user.lualine')
 require('user.indent-line')
 require('user.bufferline')
+require('user.treesitter')
 

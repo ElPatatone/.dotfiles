@@ -189,6 +189,11 @@ _G.packer_plugins = {
     path = "/home/patatone/.local/share/nvim/site/pack/packer/start/nvim-navic",
     url = "https://github.com/SmiteshP/nvim-navic"
   },
+  ["nvim-treesitter"] = {
+    loaded = true,
+    path = "/home/patatone/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
+    url = "https://github.com/nvim-treesitter/nvim-treesitter"
+  },
   ["nvim-web-devicons"] = {
     loaded = true,
     path = "/home/patatone/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
