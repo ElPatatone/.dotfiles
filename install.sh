@@ -31,6 +31,7 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 #insatll npm
 nvm install node
 
+npm install -g tree-sitter-cli
 #commands to remove nvm if needed
 #nvm deactivate
 #nvm unload

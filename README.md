@@ -18,7 +18,8 @@ Nix will install the following programs once the `install.sh` script runs:
 - `GNU stow` (used to simlink all the files and make it easy to manage)
 - `fzf` (easily search for files while in the command line)
 - `bat` (cat command but on steroids)
-- `unzip` (unzipping tool) 
+- `unzip` (unzipping tool)
+- `gcc` (C compiler as it is needed for tree-siter nvim plugin to work)
 
 Things installed without nix:
 - `nvm` (node version manager)
@@ -29,7 +30,7 @@ Things installed without nix:
 
 ### Requirements
 
-> #### **_A linux system is needed to use this configuration!_**  
+> #### **_A linux system is needed to use this configuration!_**
 If using Windows, set up `wsl` with the `windows terminal` to use any of the available linux distros on the microsoft store without needing to dualboot.  
 
 There is no required software you have to install before running the `install.sh` 

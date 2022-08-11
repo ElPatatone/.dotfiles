@@ -204,15 +204,15 @@ _G.packer_plugins = {
     path = "/home/patatone/.local/share/nvim/site/pack/packer/start/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
   },
-  pinkmare = {
-    loaded = true,
-    path = "/home/patatone/.local/share/nvim/site/pack/packer/start/pinkmare",
-    url = "https://github.com/matsuuu/pinkmare"
-  },
   ["plenary.nvim"] = {
     loaded = true,
     path = "/home/patatone/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
+  },
+  ["pop-punk.vim"] = {
+    loaded = true,
+    path = "/home/patatone/.local/share/nvim/site/pack/packer/start/pop-punk.vim",
+    url = "https://github.com/bignimbus/pop-punk.vim"
   },
   ["popup.nvim"] = {
     loaded = true,
