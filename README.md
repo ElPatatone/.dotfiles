@@ -24,6 +24,7 @@ Nix will install the following programs once the `install.sh` script runs:
 Things installed without nix:
 - `nvm` (node version manager)
 - `npm` (installed through nvm to easily manage)
+- `tree-sitter-cli` (needed for treesitter plugin to work in nvim) 
 - `win32yank.exe` (system clipping tool that works in nvim as well)
 
 ## How to use this
