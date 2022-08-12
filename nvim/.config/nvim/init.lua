@@ -8,4 +8,5 @@ require('user.lualine')
 require('user.indent-line')
 require('user.bufferline')
 require('user.treesitter')
+require('user.lsp')
 
