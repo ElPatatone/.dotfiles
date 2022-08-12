@@ -10,4 +10,20 @@ require'nvim-treesitter.configs'.setup {
     additional_vim_regex_highlighting = false,
   },
   indent = { enable = true, disable = { "lua" } },
+
+  rainbow = {
+    enable = true,
+    colors = {
+      -- "#68a0b0",
+      -- "#946EaD",
+      -- "#c7aA6D",
+      "Gold",
+      "Orchid",
+      "DodgerBlue",
+      -- "Cornsilk",
+      -- "Salmon",
+      -- "LawnGreen",
+    },
+    disable = { "html" },
+  },
 }

@@ -52,6 +52,7 @@ return packer.startup(function(use)
   use "kyazdani42/nvim-web-devicons"
   use "akinsho/bufferline.nvim"
   use "nvim-treesitter/nvim-treesitter"
+  use "p00f/nvim-ts-rainbow"
 
   --colorschemes
   use "ellisonleao/gruvbox.nvim"

@@ -1,4 +1,4 @@
-local colorscheme = "pop-punk"
+local colorscheme = "moonfly"
 
 vim.g.moonflyItalics = false
 vim.g.moonflyCursorColor = true
