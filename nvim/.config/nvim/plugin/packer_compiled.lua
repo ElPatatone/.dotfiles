@@ -139,11 +139,6 @@ _G.packer_plugins = {
     path = "/home/patatone/.local/share/nvim/site/pack/packer/start/lsp-inlayhints.nvim",
     url = "https://github.com/lvimuser/lsp-inlayhints.nvim"
   },
-  ["lsp_lines.nvim"] = {
-    loaded = true,
-    path = "/home/patatone/.local/share/nvim/site/pack/packer/start/lsp_lines.nvim",
-    url = "https://git.sr.ht/~whynothugo/lsp_lines.nvim"
-  },
   ["lsp_signature.nvim"] = {
     loaded = true,
     path = "/home/patatone/.local/share/nvim/site/pack/packer/start/lsp_signature.nvim",
