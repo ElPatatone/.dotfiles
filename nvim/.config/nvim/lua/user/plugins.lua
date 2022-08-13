@@ -41,11 +41,11 @@ packer.init {
 -- Install your plugins here
 return packer.startup(function(use)
   -- My plugins here
-  
+
   use "wbthomason/packer.nvim" -- Have packer manage itself
   use "nvim-lua/popup.nvim" -- An implementation of the Popup API from vim in Neovim
   use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
-  
+
   --nice to haves
   use "lukas-reineke/indent-blankline.nvim"
   use "nvim-lualine/lualine.nvim"
@@ -71,8 +71,6 @@ return packer.startup(function(use)
   use "RRethy/vim-illuminate"
   use "j-hui/fidget.nvim"
   use "lvimuser/lsp-inlayhints.nvim"
-  -- use "simrat39/inlay-hints.nvim"
-  use "https://git.sr.ht/~whynothugo/lsp_lines.nvim"
 
   -- Completion
   use "christianchiarulli/nvim-cmp"
