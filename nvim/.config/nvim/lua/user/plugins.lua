@@ -70,7 +70,7 @@ return packer.startup(function(use)
   use "SmiteshP/nvim-navic"
   use "RRethy/vim-illuminate"
   use "j-hui/fidget.nvim"
- -- use "lvimuser/lsp-inlayhints.nvim"
+  use "lvimuser/lsp-inlayhints.nvim"
   -- use "simrat39/inlay-hints.nvim"
   use "https://git.sr.ht/~whynothugo/lsp_lines.nvim"
 
