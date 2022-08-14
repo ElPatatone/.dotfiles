@@ -52,6 +52,9 @@ return packer.startup(function(use)
   use "akinsho/bufferline.nvim"
   use "kyazdani42/nvim-tree.lua"
 
+  -- commenting
+  use "numToStr/Comment.nvim"
+
   -- telescope
   use "nvim-telescope/telescope.nvim"
   use "nvim-telescope/telescope-media-files.nvim"
@@ -61,6 +64,7 @@ return packer.startup(function(use)
   -- treesitter
   use "nvim-treesitter/nvim-treesitter"
   use "p00f/nvim-ts-rainbow"
+  use "JoosepAlviste/nvim-ts-context-commentstring"
 
   --colorschemes
   use "ellisonleao/gruvbox.nvim"
