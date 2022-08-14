@@ -1,0 +1,23 @@
+{
+    "background": "#020005",
+    "black": "#000000",
+    "blue": "#39168b",
+    "brightBlack": "#949494",
+    "brightBlue": "#74B2FF",
+    "brightCyan": "#85DC85",
+    "brightGreen": "#36C692",
+    "brightPurple": "#AE81FF",
+    "brightRed": "#f33773",
+    "brightWhite": "#E4E4E4",
+    "brightYellow": "#C2C292",
+    "cursorColor": "#eef8f1",
+    "cyan": "#79DAC8",
+    "foreground": "#7b917a",
+    "green": "#6dfc00",
+    "name": "moonfly",
+    "purple": "#D183E8",
+    "red": "#d61919",
+    "selectionBackground": "#B2CEEE",
+    "white": "#C6C6C6",
+    "yellow": "#ebad27"
+}
