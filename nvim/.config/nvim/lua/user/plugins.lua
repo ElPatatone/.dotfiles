@@ -52,6 +52,10 @@ return packer.startup(function(use)
   use "akinsho/bufferline.nvim"
   use "kyazdani42/nvim-tree.lua"
 
+  --editing support 
+  use "windwp/nvim-autopairs"
+  use "karb94/neoscroll.nvim" 
+
   -- commenting
   use "numToStr/Comment.nvim"
 
