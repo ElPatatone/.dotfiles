@@ -45,14 +45,18 @@ return packer.startup(function(use)
   use "wbthomason/packer.nvim" -- Have packer manage itself
   use "nvim-lua/popup.nvim" -- An implementation of the Popup API from vim in Neovim
   use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
-  use "SmiteshP/nvim-navic"
 
-  --nice to haves
+  --nicer nvim
   use "lukas-reineke/indent-blankline.nvim"
   use "nvim-lualine/lualine.nvim"
-  use "kyazdani42/nvim-web-devicons"
   use "akinsho/bufferline.nvim"
   use "kyazdani42/nvim-tree.lua"
+
+  -- telescope
+  use "nvim-telescope/telescope.nvim"
+  use "nvim-telescope/telescope-media-files.nvim"
+
+  use "kyazdani42/nvim-web-devicons"
 
   -- treesitter
   use "nvim-treesitter/nvim-treesitter"
