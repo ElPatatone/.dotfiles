@@ -9,10 +9,11 @@ require('neorg').setup {
                 }
             }
         },
-        ["external.kanban"] = {},
-        ["core.norg.completion"] = {},
-        ["core.gtd.base"] = {},
-
-
+        ["core.norg.completion"] = {
+            config = {
+                engine = "nvim-cmp"
+            }
+        },
+        ["core.norg.qol.toc"] = {},
     }
 }

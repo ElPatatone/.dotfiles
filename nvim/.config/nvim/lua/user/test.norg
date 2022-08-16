@@ -1,0 +1,10 @@
+= TOC 
+
+* hello [%] 
+  - [x] first task
+  - [-] second task
+  - [=] third task
+  - [!] fourth 
+* hello
+* hi
+
