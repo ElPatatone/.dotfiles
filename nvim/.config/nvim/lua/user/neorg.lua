@@ -15,5 +15,10 @@ require('neorg').setup {
             }
         },
         ["core.norg.qol.toc"] = {},
+        ["core.gtd.base"] = {
+            config = {
+                workspace = "work" 
+            }
+        },
     }
 }
