@@ -72,6 +72,17 @@ bindkey '	' autosuggest-accept
 bindkey '[' history-substring-search-up
 bindkey ']' history-substring-search-down
 
+#tmux aliases
+alias t="tmux"
+alias ta="tmux attach"
+alias tas="tmux attach -t"
+alias tl="tmux ls"
+alias tn="tmux new -s" 
+alias tk="tmux kill-session -t"
+alias td="tmux detach"
+alias t="tmux"
+alias t="tmux"
+alias t="tmux"
 #settings 
 unsetopt BEEP
 
