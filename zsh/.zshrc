@@ -48,6 +48,8 @@ alias cc="conda create --name"
 alias cr="conda env remove --name"
 alias ce="conda env list"
 alias cl="conda list"
+alias ci="conda install"
+alias j="jupyter-notebook"
 
 #git commands
 alias gf="git fork"
