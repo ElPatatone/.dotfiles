@@ -1,6 +1,6 @@
 require'nvim-treesitter.configs'.setup {
   -- A list of parser names, or "all"
-  ensure_installed = { "c", "lua", "rust", "python"},
+  ensure_installed = { "c", "lua", "rust", "python", "org"},
   sync_install = false,
   auto_install = true,
 
@@ -8,7 +8,7 @@ require'nvim-treesitter.configs'.setup {
     -- `false` will disable the whole extension
     disable = {"markdown"},
     enable = true,
-    additional_vim_regex_highlighting = false,
+    additional_vim_regex_highlighting = {'org'},
   },
   indent = { enable = true, disable = { "lua" } },
 
