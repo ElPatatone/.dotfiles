@@ -224,11 +224,6 @@ _G.packer_plugins = {
     path = "/home/patatone/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
     url = "https://github.com/kyazdani42/nvim-web-devicons"
   },
-  orgmode = {
-    loaded = true,
-    path = "/home/patatone/.local/share/nvim/site/pack/packer/start/orgmode",
-    url = "https://github.com/nvim-orgmode/orgmode"
-  },
   ["packer.nvim"] = {
     loaded = true,
     path = "/home/patatone/.local/share/nvim/site/pack/packer/start/packer.nvim",
@@ -258,6 +253,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/patatone/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
+  },
+  ["vim-dotoo"] = {
+    loaded = true,
+    path = "/home/patatone/.local/share/nvim/site/pack/packer/start/vim-dotoo",
+    url = "https://github.com/dhruvasagar/vim-dotoo"
   },
   ["vim-illuminate"] = {
     loaded = true,
