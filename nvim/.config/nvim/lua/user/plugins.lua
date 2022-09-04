@@ -55,6 +55,12 @@ return packer.startup(function(use)
   --editing support 
   use "windwp/nvim-autopairs"
   use "karb94/neoscroll.nvim" 
+  use {
+  "ur4ltz/surround.nvim",
+  config = function()
+    require"surround".setup {mappings_style = "sandwich"}
+  end
+  }
 
   -- commenting
   use "numToStr/Comment.nvim"
