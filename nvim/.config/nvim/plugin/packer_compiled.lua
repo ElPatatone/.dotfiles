@@ -271,11 +271,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/patatone/.local/share/nvim/site/pack/packer/start/vim-moonfly-colors",
     url = "https://github.com/bluz71/vim-moonfly-colors"
-  },
-  vimwiki = {
-    loaded = true,
-    path = "/home/patatone/.local/share/nvim/site/pack/packer/start/vimwiki",
-    url = "https://github.com/vimwiki/vimwiki"
   }
 }
 
