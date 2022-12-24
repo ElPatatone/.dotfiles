@@ -13,7 +13,7 @@ nix-env -iA \
 	nixpkgs.fzf \
 	nixpkgs.bat \
 	nixpkgs.unzip \
-        nixpkgs.gcc \
+    nixpkgs.gcc \
 
 # stow
 stow zsh
