@@ -8,7 +8,6 @@ curl -L https://nixos.org/nix/install | sh
 nix-env -iA \
 	nixpkgs.zsh \
 	nixpkgs.git \
-	nixpkgs.neovim \
 	nixpkgs.tmux \
 	nixpkgs.stow \
 	nixpkgs.fzf \
