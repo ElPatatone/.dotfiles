@@ -1,3 +1,11 @@
+#install apps
+sudo apt install zsh	
+sudo apt-get install stow
+sudo apt install tmux
+sudo apt install zip
+sudo apt install unzip
+sudo apt-get install build-essential gdb
+
 # stow
 stow zsh
 stow nvim
