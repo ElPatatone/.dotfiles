@@ -11,10 +11,6 @@ autoload -Uz compinit
 compinit
 
 
-# Nix
-if [ -e ~/.nix-profile/etc/profile.d/nix.sh ]; then . ~/.nix-profile/etc/profile.d/nix.sh; fi
-
-
 #get antidote
 [[ -e ~/.antidote ]] || git clone https://github.com/mattmc3/antidote.git ~/.antidote
 
