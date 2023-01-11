@@ -51,7 +51,7 @@ return packer.startup(function(use)
   use "nvim-lualine/lualine.nvim"
   use "akinsho/bufferline.nvim"
   use "kyazdani42/nvim-tree.lua"
-
+  use "norcalli/nvim-colorizer.lua"
   --editing support 
   use "windwp/nvim-autopairs"
   use "karb94/neoscroll.nvim" 
@@ -119,7 +119,7 @@ return packer.startup(function(use)
   use "lewis6991/gitsigns.nvim" 
 
   -- web dev 
-
+  require'colorizer'.setup()
   --organisation
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
