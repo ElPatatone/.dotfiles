@@ -84,28 +84,9 @@ alias t="tmux"
 #settings 
 unsetopt BEEP
 
-#sets default starting directory
-cd /mnt/d/wsl
-
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/home/patatone/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/home/patatone/miniconda3/etc/profile.d/conda.sh" ]; then
-        . "/home/patatone/miniconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/home/patatone/miniconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
-
-
 if [ -e /home/patatone/.nix-profile/etc/profile.d/nix.sh ]; then . /home/patatone/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
 
-
+export CLANGD_FLAGS="-I/usr/include/c++/11"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
