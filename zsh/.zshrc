@@ -32,7 +32,6 @@ alias c="clear"
 alias zr="source .zshrc"
 
 #shortcut for a directory
-alias wsl="cd /mnt/d/wsl"
 alias n="cd ~/.dotfiles/nvim/.config/nvim"
 alias d="cd ~/.dotfiles"
 alias u="cd ~/.dotfiles/nvim/.config/nvim/lua/user"
