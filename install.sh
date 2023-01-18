@@ -10,6 +10,7 @@ sudo apt-get install build-essential gdb
 stow zsh
 stow nvim
 stow tmux
+stow alacritty
 
 # add zsh to valid login shells 
 command -v zsh | sudo tee -a /etc/shells

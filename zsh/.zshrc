@@ -35,7 +35,6 @@ alias zr="source .zshrc"
 alias n="cd ~/.dotfiles/nvim/.config/nvim"
 alias d="cd ~/.dotfiles"
 alias u="cd ~/.dotfiles/nvim/.config/nvim/lua/user"
-
 #conda
 alias ca="conda activate"
 alias dc="conda deactivate"
