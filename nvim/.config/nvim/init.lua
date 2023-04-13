@@ -12,4 +12,4 @@ require('user.comment')
 require('user.autopairs')
 require('user.telescope')
 require('user.lsp')
-
+require('user.autotag')

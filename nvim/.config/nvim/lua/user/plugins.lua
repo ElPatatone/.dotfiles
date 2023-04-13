@@ -81,9 +81,8 @@ return packer.startup(function(use)
   --colorschemes
   use "ellisonleao/gruvbox.nvim"
   use "bluz71/vim-moonfly-colors"
-  use "bignimbus/pop-punk.vim"
-
-
+  use "bignimbus/pop-punk.vim" 
+  use "windwp/nvim-ts-autotag"
 
  -- lsp 
  use {
