@@ -71,8 +71,8 @@ return packer.startup(function(use)
 
   -- treesitter
   use({'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'})
-  use "p00f/nvim-ts-rainbow"
   use "JoosepAlviste/nvim-ts-context-commentstring"
+  use "HiPhish/nvim-ts-rainbow2"
 
   use('theprimeagen/harpoon')
   use('mbbill/undotree')
@@ -83,6 +83,7 @@ return packer.startup(function(use)
   use "bluz71/vim-moonfly-colors"
   use "bignimbus/pop-punk.vim" 
   use "windwp/nvim-ts-autotag"
+  use "owickstrom/vim-colors-paramount"
 
  -- lsp 
  use {

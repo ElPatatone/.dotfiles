@@ -1,4 +1,4 @@
-local colorscheme = "moonfly"
+local colorscheme = "paramount"
 
 vim.g.moonflyItalics = false
 vim.g.moonflyCursorColor = true

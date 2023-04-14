@@ -14,17 +14,17 @@ require'nvim-treesitter.configs'.setup {
 
   rainbow = {
     enable = true,
+    disable = { "html", "javascript"},
     colors = {
       -- "#68a0b0",
       -- "#946EaD",
       -- "#c7aA6D",
-      "Gold",
-      "Orchid",
-      "DodgerBlue",
+         "Gold",
+         "Orchid",
+         "DodgerBlue",
       -- "Cornsilk",
       -- "Salmon",
       -- "LawnGreen",
     },
-    disable = { "html" },
   },
 }
