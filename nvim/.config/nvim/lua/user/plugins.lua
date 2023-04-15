@@ -105,9 +105,9 @@ return packer.startup(function(use)
             -- Snippets
             { 'L3MON4D3/LuaSnip' },
             { 'rafamadriz/friendly-snippets' },
+            {'dsznajder/vscode-es7-javascript-react-snippets'},
         }
     }
-
 
 
     --markdown
