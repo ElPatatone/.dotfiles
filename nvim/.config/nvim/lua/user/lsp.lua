@@ -24,12 +24,10 @@ lsp.configure('sumneko_lua', {
 require('luasnip').filetype_extend("javascript", { "javascriptreact" })
 require('luasnip').filetype_extend("javascript", { "html" })
 
+
 lsp.on_attach(function(client, bufnr)
   lsp.default_keymaps({buffer = bufnr})
-
-  vim.keymap.set({'n', 'x'}, 'gq', function()
-    vim.lsp.buf.format({async = false, timeout_ms = 10000})
-  end)
+  lsp.buffer_autoformat()
 end)
 
 require('lspconfig').clangd.setup {
