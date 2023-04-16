@@ -69,8 +69,5 @@ keymap("t", "<C-l>", "<C-\\><C-N><C-w>l", term_opts)
 -- Markdown Preview
 keymap("n", "<C-s>", ":MarkdownPreview<CR>", opts)
 
---Formatting with null-ls
-keymap("n", "<leader>f", ":Format<CR>", opts)
-
 --Telescope
 keymap("n", "<leader>t", ":Telescope find_files<CR>", opts)

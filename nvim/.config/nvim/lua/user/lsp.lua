@@ -3,34 +3,49 @@ local lsp = require("lsp-zero")
 lsp.preset("recommended")
 
 lsp.ensure_installed({
-    'tsserver',
-    'eslint',
-    'rust_analyzer',
-    'clangd',
-    'pyright',
+    "tsserver",
+    "eslint",
+    "rust_analyzer",
+    "clangd",
+    "pyright",
 })
 
 -- Fix Undefined global 'vim'
-lsp.configure('sumneko_lua', {
+lsp.configure("sumneko_lua", {
     settings = {
         Lua = {
             diagnostics = {
-                globals = { 'vim' }
-            }
-        }
-    }
+                globals = { "vim" },
+            },
+        },
+    },
 })
 
-require('luasnip').filetype_extend("javascript", { "javascriptreact" })
-require('luasnip').filetype_extend("javascript", { "html" })
+-- Formatting with null ls
+local null_ls = require("null-ls")
+local formatting = null_ls.builtins.formatting
+local diagnostics = null_ls.builtins.diagnostics
 
+null_ls.setup({
+    debug = false,
+    sources = {
+        formatting.prettier,
+        formatting.black.with { extra_args = { "--fast" } },
+        formatting.stylua,
+        formatting.google_java_format,
+    },
+})
 
-lsp.on_attach(function(client, bufnr)
-  lsp.default_keymaps({buffer = bufnr})
-  lsp.buffer_autoformat()
-end)
+null_ls.setup({
+    sources = sources,
+    on_attach = on_attach,
+})
 
-require('lspconfig').clangd.setup {
+-- commands for extra snippets
+require("luasnip").filetype_extend("javascript", { "javascriptreact" })
+require("luasnip").filetype_extend("javascript", { "html" })
+
+require("lspconfig").clangd.setup({
     cmd = {
         "clangd",
         "--background-index",
@@ -46,42 +61,41 @@ require('lspconfig').clangd.setup {
     },
     filetypes = { "c", "cpp", "objc", "objcpp" },
     -- root_dir = utils.root_pattern("compile_commands.json", "compile_flags.txt", ".git")
-    init_option = { fallbackFlags = { "-std=c++2a" } }
-}
+    init_option = { fallbackFlags = { "-std=c++2a" } },
+})
 
-
-local cmp = require('cmp')
+local cmp = require("cmp")
 local cmp_select = { behavior = cmp.SelectBehavior.Select }
 local cmp_mappings = lsp.defaults.cmp_mappings({
-    ['<C-p>'] = cmp.mapping.select_prev_item(cmp_select),
-    ['<C-n>'] = cmp.mapping.select_next_item(cmp_select),
-    ['<C-y>'] = cmp.mapping.confirm({ select = true }),
+    ["<C-p>"] = cmp.mapping.select_prev_item(cmp_select),
+    ["<C-n>"] = cmp.mapping.select_next_item(cmp_select),
+    ["<C-y>"] = cmp.mapping.confirm({ select = true }),
     ["<C-Space>"] = cmp.mapping.complete(),
 })
 -- disable completion with tab
 -- this helps with copilot setup
-cmp_mappings['<Tab>'] = nil
-cmp_mappings['<S-Tab>'] = nil
+cmp_mappings["<Tab>"] = nil
+cmp_mappings["<S-Tab>"] = nil
 
 lsp.setup_nvim_cmp({
-    mapping = cmp_mappings
+    mapping = cmp_mappings,
 })
 
 lsp.set_preferences({
     suggest_lsp_servers = false,
     sign_icons = {
-        error = '',
-        warn = '',
-        hint = '',
-        info = '',
-    }
+        error = "",
+        warn = "",
+        hint = "",
+        info = "",
+    },
 })
 
 lsp.on_attach(function(client, bufnr)
     local opts = { buffer = bufnr, remap = false }
 
     if client.name == "eslint" then
-        vim.cmd.LspStop('eslint')
+        vim.cmd.LspStop("eslint")
         return
     end
 
@@ -95,6 +109,7 @@ lsp.on_attach(function(client, bufnr)
     vim.keymap.set("n", "<leader>vrr", vim.lsp.buf.references, opts)
     vim.keymap.set("n", "<leader>vrn", vim.lsp.buf.rename, opts)
     vim.keymap.set("i", "<C-h>", vim.lsp.buf.signature_help, opts)
+    vim.keymap.set("n", "<leader>f", ":LspZeroFormat<CR>", opts)
 end)
 
 lsp.setup()

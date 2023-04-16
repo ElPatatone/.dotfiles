@@ -55,6 +55,7 @@ return packer.startup(function(use)
     --editing support
     use "windwp/nvim-autopairs"
     use "karb94/neoscroll.nvim"
+    use "kylechui/nvim-surround"
     -- commenting
     use "numToStr/Comment.nvim"
 
@@ -72,7 +73,6 @@ return packer.startup(function(use)
     -- treesitter
     use({ 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' })
     use "JoosepAlviste/nvim-ts-context-commentstring"
-    use "HiPhish/nvim-ts-rainbow2"
 
     use('theprimeagen/harpoon')
     use('mbbill/undotree')
@@ -106,6 +106,9 @@ return packer.startup(function(use)
             { 'L3MON4D3/LuaSnip' },
             { 'rafamadriz/friendly-snippets' },
             {'dsznajder/vscode-es7-javascript-react-snippets'},
+
+            -- Formatter
+            {"jose-elias-alvarez/null-ls.nvim"}
         }
     }
 
@@ -121,6 +124,7 @@ return packer.startup(function(use)
 
     -- web dev
     require 'colorizer'.setup()
+    require("nvim-surround").setup()
     --organisation
     -- Automatically set up your configuration after cloning packer.nvim
     -- Put this at the end after all plugins
