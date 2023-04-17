@@ -94,6 +94,11 @@ _G.packer_plugins = {
     path = "/home/elpatatone/.local/share/nvim/site/pack/packer/start/cmp-buffer",
     url = "https://github.com/hrsh7th/cmp-buffer"
   },
+  ["cmp-nvim-lsp"] = {
+    loaded = true,
+    path = "/home/elpatatone/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
+    url = "https://github.com/hrsh7th/cmp-nvim-lsp"
+  },
   ["cmp-path"] = {
     loaded = true,
     path = "/home/elpatatone/.local/share/nvim/site/pack/packer/start/cmp-path",
@@ -124,6 +129,16 @@ _G.packer_plugins = {
     path = "/home/elpatatone/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",
     url = "https://github.com/lukas-reineke/indent-blankline.nvim"
   },
+  ["lspkind.nvim"] = {
+    loaded = true,
+    path = "/home/elpatatone/.local/share/nvim/site/pack/packer/start/lspkind.nvim",
+    url = "https://github.com/onsails/lspkind.nvim"
+  },
+  ["lspsaga.nvim"] = {
+    loaded = true,
+    path = "/home/elpatatone/.local/share/nvim/site/pack/packer/start/lspsaga.nvim",
+    url = "https://github.com/glepnir/lspsaga.nvim"
+  },
   ["lualine.nvim"] = {
     loaded = true,
     path = "/home/elpatatone/.local/share/nvim/site/pack/packer/start/lualine.nvim",
@@ -134,10 +149,30 @@ _G.packer_plugins = {
     path = "/home/elpatatone/.local/share/nvim/site/pack/packer/start/markdown-preview.nvim",
     url = "https://github.com/iamcco/markdown-preview.nvim"
   },
+  ["mason-lspconfig.nvim"] = {
+    loaded = true,
+    path = "/home/elpatatone/.local/share/nvim/site/pack/packer/start/mason-lspconfig.nvim",
+    url = "https://github.com/williamboman/mason-lspconfig.nvim"
+  },
+  ["mason-null-ls.nvim"] = {
+    loaded = true,
+    path = "/home/elpatatone/.local/share/nvim/site/pack/packer/start/mason-null-ls.nvim",
+    url = "https://github.com/jayp0521/mason-null-ls.nvim"
+  },
+  ["mason.nvim"] = {
+    loaded = true,
+    path = "/home/elpatatone/.local/share/nvim/site/pack/packer/start/mason.nvim",
+    url = "https://github.com/williamboman/mason.nvim"
+  },
   neorg = {
     loaded = true,
     path = "/home/elpatatone/.local/share/nvim/site/pack/packer/start/neorg",
     url = "https://github.com/nvim-neorg/neorg"
+  },
+  ["null-ls.nvim"] = {
+    loaded = true,
+    path = "/home/elpatatone/.local/share/nvim/site/pack/packer/start/null-ls.nvim",
+    url = "https://github.com/jose-elias-alvarez/null-ls.nvim"
   },
   ["nvim-autopairs"] = {
     loaded = true,
@@ -153,6 +188,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/elpatatone/.local/share/nvim/site/pack/packer/start/nvim-colorizer.lua",
     url = "https://github.com/norcalli/nvim-colorizer.lua"
+  },
+  ["nvim-lspconfig"] = {
+    loaded = true,
+    path = "/home/elpatatone/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
+    url = "https://github.com/neovim/nvim-lspconfig"
   },
   ["nvim-surround"] = {
     loaded = true,
@@ -213,6 +253,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/elpatatone/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
+  },
+  ["typescript.nvim"] = {
+    loaded = true,
+    path = "/home/elpatatone/.local/share/nvim/site/pack/packer/start/typescript.nvim",
+    url = "https://github.com/jose-elias-alvarez/typescript.nvim"
   },
   undotree = {
     loaded = true,
