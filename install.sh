@@ -1,5 +1,5 @@
 #install apps
-sudo apt install zsh	
+sudo apt install zsh
 sudo apt-get install stow
 sudo apt install tmux
 sudo apt install zip
