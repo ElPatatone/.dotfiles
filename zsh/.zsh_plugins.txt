@@ -12,4 +12,5 @@ zsh-users/zsh-autosuggestions
 zsh-users/zsh-completions
 zsh-users/zsh-syntax-highlighting
 
+marlonrichert/zsh-autocomplete
 zsh-users/zsh-history-substring-search

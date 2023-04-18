@@ -65,10 +65,12 @@ alias gdel="git branch -D"
 alias glf=" git log --graph --pretty=format:'%C(italic yellow)%ad%Creset %C(green)<%an> %C(bold magenta)%h%Creset -%C(auto)%d %Creset %s %Creset' --date=format-local:'%Y-%m-%d %H:%M (%a)'"
 
 #zsh-autosuggestions keybind
-bindkey '	' autosuggest-accept
+bindkey '^ ' autosuggest-accept
 bindkey '[' history-substring-search-up
 bindkey ']' history-substring-search-down
 
+#this is for zsh autcompletion
+zstyle -e ':autocomplete:list-choices:*' list-lines 'reply=( $(( LINES / 3 )) )'
 #tmux aliases
 alias t="tmux"
 alias ta="tmux attach"
