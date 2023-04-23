@@ -31,7 +31,8 @@ alias vim="nvim"
 alias ls="ls -la"
 alias c="clear"
 alias zr="source .zshrc"
-
+#fzf through files
+alias sd="cd ~ && cd \$(find * -type d | fzf)"
 #shortcut for a directory
 alias n="cd ~/.dotfiles/nvim/.config/nvim"
 alias d="cd ~/.dotfiles"
@@ -45,6 +46,10 @@ alias ce="conda env list"
 alias cl="conda list"
 alias ci="conda install"
 alias j="jupyter-notebook"
+
+
+#this is a script for making new tmux sessions
+alias tn="$HOME/.local/bin/tmux-sessionizer.sh"
 
 #git commands
 alias gf="git fork"
@@ -71,17 +76,6 @@ bindkey ']' history-substring-search-down
 
 #this is for zsh autcompletion
 zstyle -e ':autocomplete:list-choices:*' list-lines 'reply=( $(( LINES / 3 )) )'
-#tmux aliases
-alias t="tmux"
-alias ta="tmux attach"
-alias tas="tmux attach -t"
-alias tl="tmux ls"
-alias tn="tmux new -s" 
-alias tk="tmux kill-session -t"
-alias td="tmux detach"
-alias t="tmux"
-alias t="tmux"
-alias t="tmux"
 #settings 
 unsetopt BEEP
 
