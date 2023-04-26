@@ -31,8 +31,10 @@ alias vim="nvim"
 alias ls="ls -la"
 alias c="clear"
 alias zr="source .zshrc"
+
 #fzf through files
 alias sd="cd ~ && cd \$(find * -type d | fzf)"
+
 #shortcut for a directory
 alias n="cd ~/.dotfiles/nvim/.config/nvim"
 alias d="cd ~/.dotfiles"
