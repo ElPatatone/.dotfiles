@@ -140,6 +140,15 @@ return packer.startup(function(use)
 
 	-- r development
 	use("jamespeapen/Nvim-R")
+
+	use({
+		"lervag/vimtex",
+		config = function()
+			vim.cmd([[
+        let g:vimtex_view_method = 'zathura'
+      ]])
+		end,
+	})
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
 	if PACKER_BOOTSTRAP then
