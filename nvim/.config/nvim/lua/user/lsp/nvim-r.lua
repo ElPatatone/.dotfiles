@@ -21,6 +21,10 @@ EOF
 vim.g.R_csv_app = "tmux new-window vd" -- view data frames in visidata
 
 vim.g.R_pdfviewer = "zathura"
+vim.g.R_rconsole_width = 0
+vim.g.R_rconsole_height = 15
+-- vim.g.R_external_term = 1
+-- vim.g.R_external_term = "alacritty"
 vim.g.R_insert_mode_cmds = 0 -- Don't use Nvim-R commands in insert mode
 vim.g.R_nvim_wd = 1 -- Use the Nvim working directory, not that of the file
 vim.g.r_syntax_folding = 1

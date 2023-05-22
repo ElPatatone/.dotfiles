@@ -144,6 +144,11 @@ _G.packer_plugins = {
     path = "/home/elpatatone/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",
     url = "https://github.com/lukas-reineke/indent-blankline.nvim"
   },
+  ["jellybeans-nvim"] = {
+    loaded = true,
+    path = "/home/elpatatone/.local/share/nvim/site/pack/packer/start/jellybeans-nvim",
+    url = "https://github.com/metalelf0/jellybeans-nvim"
+  },
   ["lspkind.nvim"] = {
     loaded = true,
     path = "/home/elpatatone/.local/share/nvim/site/pack/packer/start/lspkind.nvim",
@@ -158,6 +163,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/elpatatone/.local/share/nvim/site/pack/packer/start/lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
+  },
+  ["lush.nvim"] = {
+    loaded = true,
+    path = "/home/elpatatone/.local/share/nvim/site/pack/packer/start/lush.nvim",
+    url = "https://github.com/rktjmp/lush.nvim"
   },
   ["markdown-preview.nvim"] = {
     loaded = true,
@@ -278,6 +288,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/elpatatone/.local/share/nvim/site/pack/packer/start/undotree",
     url = "https://github.com/mbbill/undotree"
+  },
+  ["vim-J"] = {
+    loaded = true,
+    path = "/home/elpatatone/.local/share/nvim/site/pack/packer/start/vim-J",
+    url = "https://github.com/arthurealike/vim-J"
   },
   ["vim-colors-paramount"] = {
     loaded = true,

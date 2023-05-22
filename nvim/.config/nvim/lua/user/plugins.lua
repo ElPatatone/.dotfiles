@@ -88,7 +88,9 @@ return packer.startup(function(use)
 	use("bignimbus/pop-punk.vim")
 	use("windwp/nvim-ts-autotag")
 	use("owickstrom/vim-colors-paramount")
-
+	use({ "rktjmp/lush.nvim" })
+	use({ "metalelf0/jellybeans-nvim" })
+	use({ "arthurealike/vim-J" })
 	--markdown
 	use({
 		"iamcco/markdown-preview.nvim",
