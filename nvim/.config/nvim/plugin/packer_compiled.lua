@@ -315,6 +315,11 @@ _G.packer_plugins = {
     path = "/home/elpatatone/.local/share/nvim/site/pack/packer/start/vimtex",
     url = "https://github.com/lervag/vimtex"
   },
+  ["viola-vim"] = {
+    loaded = true,
+    path = "/home/elpatatone/.local/share/nvim/site/pack/packer/start/viola-vim",
+    url = "https://github.com/ElPatatone/viola-vim"
+  },
   ["vscode-es7-javascript-react-snippets"] = {
     loaded = true,
     path = "/home/elpatatone/.local/share/nvim/site/pack/packer/start/vscode-es7-javascript-react-snippets",
