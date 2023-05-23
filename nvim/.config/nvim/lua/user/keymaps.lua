@@ -69,5 +69,9 @@ keymap("t", "<C-l>", "<C-\\><C-N><C-w>l", term_opts)
 -- Markdown Preview
 keymap("n", "<C-s>", ":MarkdownPreview<CR>", opts)
 
+--Vim fugitive
+keymap("n", "p", ":Git push<CR>", opts)
+keymap("n", "<leader>g", ":Git<CR>", opts)
+
 --Telescope
 keymap("n", "<leader>t", ":Telescope find_files<CR>", opts)

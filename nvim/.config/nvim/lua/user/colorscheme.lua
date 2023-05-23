@@ -1,4 +1,4 @@
-local colorscheme = "jellybeans-nvim"
+local colorscheme = "viola"
 
 vim.g.moonflyItalics = false
 vim.g.moonflyCursorColor = true
