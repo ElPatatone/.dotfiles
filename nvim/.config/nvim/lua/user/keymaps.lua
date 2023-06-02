@@ -72,5 +72,8 @@ keymap("n", "<C-s>", ":MarkdownPreview<CR>", opts)
 --Vim fugitive
 keymap("n", "<leader>g", ":Git<CR>", opts)
 
+--Vim fugitive
+keymap("n", "<leader>n", ":Neorg index<CR>", opts)
+
 --Telescope
 keymap("n", "<leader>t", ":Telescope find_files<CR>", opts)
