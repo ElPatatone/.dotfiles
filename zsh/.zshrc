@@ -107,7 +107,7 @@ eval "$(direnv hook bash)"
 
 export PATH="/home/elpatatone/.local/bin:$PATH"
 
-~/Documents/c/day1 Rahman
+~/Documents/c/tiny-projects/chapter2 Rahman
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
