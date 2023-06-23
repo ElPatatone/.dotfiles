@@ -70,6 +70,9 @@ keymap("t", "<C-l>", "<C-\\><C-N><C-w>l", term_opts)
 keymap("n", "<C-s>", ":MarkdownPreview<CR>", opts)
 
 --Vim fugitive
+keymap("n", "<leader>c", ":Git commit<CR>", opts)
+keymap("n", "<leader>a", ":Git add .<CR>", opts)
+keymap("n", "<leader>p", ":Git push<CR>", opts)
 keymap("n", "<leader>g", ":Git<CR>", opts)
 
 --Vim fugitive
