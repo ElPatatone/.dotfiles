@@ -75,7 +75,7 @@ keymap("n", "<leader>a", ":Git add .<CR>", opts)
 keymap("n", "<leader>p", ":Git push<CR>", opts)
 keymap("n", "<leader>g", ":Git<CR>", opts)
 
---Vim fugitive
+-- neorg
 keymap("n", "<leader>n", ":Neorg index<CR>", opts)
 
 --Telescope
