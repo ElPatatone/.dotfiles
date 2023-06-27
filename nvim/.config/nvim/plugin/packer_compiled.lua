@@ -89,6 +89,11 @@ _G.packer_plugins = {
     path = "/home/elpatatone/.local/share/nvim/site/pack/packer/start/Nvim-R",
     url = "https://github.com/jamespeapen/Nvim-R"
   },
+  ["bracey.vim"] = {
+    loaded = true,
+    path = "/home/elpatatone/.local/share/nvim/site/pack/packer/start/bracey.vim",
+    url = "https://github.com/turbio/bracey.vim"
+  },
   ["bufferline.nvim"] = {
     loaded = true,
     path = "/home/elpatatone/.local/share/nvim/site/pack/packer/start/bufferline.nvim",

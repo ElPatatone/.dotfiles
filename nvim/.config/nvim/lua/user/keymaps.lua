@@ -80,3 +80,4 @@ keymap("n", "<leader>n", ":Neorg index<CR>", opts)
 
 --Telescope
 keymap("n", "<leader>t", ":Telescope find_files<CR>", opts)
+keymap("n", "<leader>h", ":noh<CR>", opts)

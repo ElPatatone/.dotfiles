@@ -100,6 +100,7 @@ return packer.startup(function(use)
 			vim.fn["mkdp#util#install"]()
 		end,
 	})
+	use("turbio/bracey.vim")
 
 	--git
 	use("lewis6991/gitsigns.nvim")
