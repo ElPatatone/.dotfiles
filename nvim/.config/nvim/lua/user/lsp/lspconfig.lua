@@ -12,7 +12,6 @@ local typescript_setup, typescript = pcall(require, "typescript")
 if not typescript_setup then
 	return
 end
-
 local keymap = vim.keymap -- for conciseness
 
 -- enable keybinds only for when lsp server available
@@ -124,29 +123,23 @@ lspconfig["lua_ls"].setup({
 	},
 })
 
--- lspconfig["clangd"].setup({
--- 	capabilities = capabilities,
--- 	on_attach = on_attach,
--- 	cmd = {
--- 		"/usr/bin/clangd-12",
--- 		"clangd",
--- 		"--background-index",
--- 		"--pch-storage=memory",
--- 		"--clang-tidy",
--- 		"--suggest-missing-includes",
--- 		"--all-scopes-completion",
--- 		"--pretty",
--- 		"--header-insertion=never",
--- 		"-j=4",
--- 		"--inlay-hints",
--- 		"--header-insertion-decorators",
--- 	},
--- 	filetypes = { "c", "cpp", "objc", "objcpp" },
--- 	-- root_dir = utils.root_pattern("compile_commands.json", "compile_flags.txt", ".git")
--- 	init_option = { fallbackFlags = { "-std=c11" } },
--- })
-
-require("lspconfig").clangd.setup({
+lspconfig["clangd"].setup({
 	capabilities = capabilities,
 	on_attach = on_attach,
+	cmd = {
+		"clangd",
+		"--background-index",
+		"--pch-storage=memory",
+		"--clang-tidy",
+		"--suggest-missing-includes",
+		"--all-scopes-completion",
+		"--pretty",
+		"--header-insertion=never",
+		"-j=4",
+		"--inlay-hints",
+		"--header-insertion-decorators",
+	},
+	filetypes = { "c", "cpp", "objc", "objcpp" },
+    -- root_dir = require('lspconfig').util.root_pattern("src"),
+	init_options = { fallbackFlags = { "-std=c++2a" } },
 })

@@ -87,7 +87,7 @@ unsetopt BEEP
 
 if [ -e /home/patatone/.nix-profile/etc/profile.d/nix.sh ]; then . /home/patatone/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
 
-export CLANGD_FLAGS="-I/usr/include/c++/11"
+# export CLANGD_FLAGS="-I/usr/include/c++/11"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
