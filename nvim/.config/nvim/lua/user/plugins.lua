@@ -117,6 +117,7 @@ return packer.startup(function(use)
 
   --git
   use "lewis6991/gitsigns.nvim" 
+  use "ElPatatone/viola-vim"
 
   -- web dev 
 

@@ -110,3 +110,10 @@ if [ -e /home/patatone/.nix-profile/etc/profile.d/nix.sh ]; then . /home/pataton
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+
+alias xlaunch='C:\Program Files\VcXsrv\xlaunch.exe -run ~/wsl/config.xlaunch'
+       export DISPLAY=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2}'):0
+       export LIBGL_ALWAYS_INDIRECT=1
+       export XDG_RUNTIME_DIR=/home/cpfische/projects/
+       export RUNLEVEL=3
