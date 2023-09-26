@@ -112,7 +112,11 @@ eval "$(direnv hook bash)"
 
 export PATH="/home/elpatatone/.local/bin:$PATH"
 
+export CLANGD_FLAGS="-I/usr/include/c++/11"
+
 conda config --set auto_activate_base false
+~/Documents/c/tiny-projects/chapter2 Rahman
+~/Documents/remindMirza/run.sh
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"

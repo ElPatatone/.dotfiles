@@ -140,6 +140,6 @@ lspconfig["clangd"].setup({
 		"--header-insertion-decorators",
 	},
 	filetypes = { "c", "cpp", "objc", "objcpp" },
-    -- root_dir = require('lspconfig').util.root_pattern("src"),
+    root_dir = require('lspconfig').util.root_pattern("src"),
 	init_options = { fallbackFlags = { "-std=c++2a" } },
 })
