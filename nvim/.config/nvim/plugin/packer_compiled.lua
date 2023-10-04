@@ -227,7 +227,7 @@ _G.packer_plugins = {
   ["nvim-tree.lua"] = {
     loaded = true,
     path = "/home/elpatatone/.local/share/nvim/site/pack/packer/start/nvim-tree.lua",
-    url = "https://github.com/kyazdani42/nvim-tree.lua"
+    url = "https://github.com/nvim-tree/nvim-tree.lua"
   },
   ["nvim-treesitter"] = {
     loaded = true,
@@ -310,7 +310,7 @@ _G.packer_plugins = {
     url = "https://github.com/bluz71/vim-moonfly-colors"
   },
   vimtex = {
-    config = { "\27LJ\2\nW\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0008        let g:vimtex_view_method = 'zathura'\n      \bcmd\bvim\0" },
+    config = { "\27LJ\2\n”\1\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0u        let g:vimtex_view_method = 'zathura'\n        let g:tex_flavor= 'latex'\n        set conceallevel=1\n      \bcmd\bvim\0" },
     loaded = true,
     path = "/home/elpatatone/.local/share/nvim/site/pack/packer/start/vimtex",
     url = "https://github.com/lervag/vimtex"
@@ -330,7 +330,7 @@ _G.packer_plugins = {
 time([[Defining packer_plugins]], false)
 -- Config for: vimtex
 time([[Config for vimtex]], true)
-try_loadstring("\27LJ\2\nW\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0008        let g:vimtex_view_method = 'zathura'\n      \bcmd\bvim\0", "config", "vimtex")
+try_loadstring("\27LJ\2\n”\1\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0u        let g:vimtex_view_method = 'zathura'\n        let g:tex_flavor= 'latex'\n        set conceallevel=1\n      \bcmd\bvim\0", "config", "vimtex")
 time([[Config for vimtex]], false)
 
 _G._packer.inside_compile = false

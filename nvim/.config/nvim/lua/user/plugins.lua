@@ -47,10 +47,15 @@ return packer.startup(function(use)
 	use("nvim-lua/plenary.nvim") -- Useful lua functions used ny lots of plugins
 
 	--nicer nvim
-	use("lukas-reineke/indent-blankline.nvim")
+	use({"lukas-reineke/indent-blankline.nvim", tag = "2.20.8"})
 	use("nvim-lualine/lualine.nvim")
 	use("akinsho/bufferline.nvim")
-	use("kyazdani42/nvim-tree.lua")
+    use {
+        'nvim-tree/nvim-tree.lua',
+        requires = {
+        'nvim-tree/nvim-web-devicons', -- optional
+          },
+        }
 	use("norcalli/nvim-colorizer.lua")
 	require("colorizer").setup()
 
@@ -150,6 +155,8 @@ return packer.startup(function(use)
 		config = function()
 			vim.cmd([[
         let g:vimtex_view_method = 'zathura'
+        let g:tex_flavor= 'latex'
+        set conceallevel=1
       ]])
 		end,
 	})
