@@ -79,5 +79,9 @@ keymap("n", "<leader>g", ":Git<CR>", opts)
 keymap("n", "<leader>n", ":Neorg index<CR>", opts)
 
 --Telescope
-keymap("n", "<leader>t", ":Telescope find_files<CR>", opts)
+keymap("n", "<leader>ff", ":Telescope find_files<CR>", opts)
+keymap("n", "<leader>fg", ":Telescope live_grep<CR>", opts)
+keymap("n", "<leader>fb", ":Telescope buffers<CR>", opts)
+keymap("n", "<leader>fh", ":Telescope help_tags<CR>", opts)
+
 keymap("n", "<leader>h", ":noh<CR>", opts)
