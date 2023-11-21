@@ -24,7 +24,7 @@ antidote load
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-cd ~/Documents
+# cd ~/Documents
 #aliases
 #system shortcuts
 alias vim="nvim"
@@ -33,7 +33,7 @@ alias c="clear"
 alias zr="source .zshrc"
 
 #fzf through files
-alias sd="cd ~ && cd \$(find * -type d | fzf)"
+alias sd='cd "$(find ~/Documents -type d | fzf)"'
 
 #shortcut for a directory
 alias n="cd ~/.dotfiles/nvim/.config/nvim"
@@ -51,7 +51,7 @@ alias j="jupyter-notebook"
 
 
 #this is a script for making new tmux sessions
-alias tn="$HOME/.local/bin/tmux-sessionizer.sh"
+alias tn="$HOME/.local/scripts/tmux-sessions.sh"
 
 #git commands
 alias gf="git fork"
@@ -110,7 +110,7 @@ unset __conda_setup
 # <<< conda initialize <<<
 eval "$(direnv hook bash)"
 
-export PATH="/home/elpatatone/.local/bin:$PATH"
+export PATH="/home/elpatatone/.local/bin:/home/elpatatone/.local/scripts:$PATH"
 
 export CLANGD_FLAGS="-I/usr/include/c++/11"
 
