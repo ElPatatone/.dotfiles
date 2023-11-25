@@ -50,6 +50,7 @@ alias j="jupyter-notebook"
 
 #this is a script for making new tmux sessions
 alias tn="$HOME/.local/scripts/tmux-sessions.sh"
+alias repo="$HOME/.local/scripts/repo-setup.sh"
 
 #git commands
 alias gf="git fork"
