@@ -135,5 +135,5 @@ lspconfig["clangd"].setup({
 	},
 	filetypes = { "c", "cpp", "objc", "objcpp" },
     root_dir = require('lspconfig').util.root_pattern("src"),
-	init_options = { fallbackFlags = { "-std=c++2a" } },
+	init_options = { fallbackFlags = { "-std=c++2b" } },
 })

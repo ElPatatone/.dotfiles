@@ -71,7 +71,7 @@ alias gdel="git branch -D"
 alias glf=" git log --graph --pretty=format:'%C(italic yellow)%ad%Creset %C(green)<%an> %C(bold magenta)%h%Creset -%C(auto)%d %Creset %s %Creset' --date=format-local:'%Y-%m-%d %H:%M (%a)'"
 
 alias b="./build.sh && ./main"
-alias alleno="cd ~/Documents/alleno-ora/build && ./alleno && cd -"
+alias alleno="cd ~/Documents/old-alleno-ora/build && ./alleno && cd -"
 alias trova="cd ~/Documents/trova-git/build && ./trova && cd -"
 
 

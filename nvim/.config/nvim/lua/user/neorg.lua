@@ -1,6 +1,7 @@
 require("neorg").setup({
 	load = {
 		["core.defaults"] = {},
+		["core.markdown"] = {},
 		["core.concealer"] = {},
 		["core.integrations.treesitter"] = {},
 		["core.dirman"] = {

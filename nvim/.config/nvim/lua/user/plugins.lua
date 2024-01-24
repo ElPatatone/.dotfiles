@@ -46,16 +46,20 @@ return packer.startup(function(use)
 	use("nvim-lua/popup.nvim") -- An implementation of the Popup API from vim in Neovim
 	use("nvim-lua/plenary.nvim") -- Useful lua functions used ny lots of plugins
 
-	--nicer nvim
+    use {
+      "nvim-neo-tree/neo-tree.nvim",
+        branch = "v3.x",
+        requires = {
+          "nvim-lua/plenary.nvim",
+          "nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
+          "MunifTanjim/nui.nvim",
+          -- "3rd/image.nvim", -- Optional image support in preview window: See `# Preview Mode` for more information
+        }
+      }
+	-- nicer nvim
 	use({"lukas-reineke/indent-blankline.nvim", tag = "2.20.8"})
 	use("nvim-lualine/lualine.nvim")
 	use("akinsho/bufferline.nvim")
-    use {
-        'nvim-tree/nvim-tree.lua',
-        requires = {
-        'nvim-tree/nvim-web-devicons', -- optional
-          },
-        }
 	use("norcalli/nvim-colorizer.lua")
 	require("colorizer").setup()
 
@@ -76,7 +80,6 @@ return packer.startup(function(use)
 	})
 
 	use("nvim-telescope/telescope-media-files.nvim")
-
 	use("kyazdani42/nvim-web-devicons")
 
 	-- treesitter
@@ -110,7 +113,8 @@ return packer.startup(function(use)
 	use("lewis6991/gitsigns.nvim")
 
 	-- productivity
-	use("nvim-neorg/neorg")
+	use{"nvim-neorg/neorg",
+        run = ":Neorg sync-parsers"}
 
 	--Autocompletion
 	use("hrsh7th/cmp-nvim-lua")
