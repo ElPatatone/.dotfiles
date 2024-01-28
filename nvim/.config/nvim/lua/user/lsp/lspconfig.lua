@@ -16,8 +16,7 @@ local keymap = vim.keymap -- for conciseness
 
 -- enable keybinds only for when lsp server available
 local on_attach = function(client, bufnr)
-	-- keybind options
-	local opts = { noremap = true, silent = true, buffer = bufnr }
+	-- keybind options local opts = { noremap = true, silent = true, buffer = bufnr }
 	keymap.set("n", "gd", vim.lsp.buf.definition, opts)
 	keymap.set("n", "K", vim.lsp.buf.hover, opts)
 	keymap.set("n", "<leader>vws", vim.lsp.buf.workspace_symbol, opts)

@@ -51,6 +51,8 @@ alias j="jupyter-notebook"
 #this is a script for making new tmux sessions
 alias tn="$HOME/.local/scripts/tmux-sessions.sh"
 alias repo="$HOME/.local/scripts/repo-setup.sh"
+# alias alleno="cd $HOME/Documents/alleno-ora/src && ./alleno && cd -"
+source "$HOME/.local/scripts/alleno.sh"
 
 #git commands
 alias gf="git fork"
@@ -70,8 +72,8 @@ alias gd="git diff"
 alias gdel="git branch -D"
 alias glf=" git log --graph --pretty=format:'%C(italic yellow)%ad%Creset %C(green)<%an> %C(bold magenta)%h%Creset -%C(auto)%d %Creset %s %Creset' --date=format-local:'%Y-%m-%d %H:%M (%a)'"
 
-alias b="./build.sh && ./main"
-alias alleno="cd ~/Documents/old-alleno-ora/build && ./alleno && cd -"
+alias b="./build.sh"
+# alias alleno="cd ~/Documents/alleno-ora/src && ./alleno && cd -"
 alias trova="cd ~/Documents/trova-git/build && ./trova && cd -"
 
 
@@ -107,7 +109,7 @@ unset __conda_setup
 # <<< conda initialize <<<
 eval "$(direnv hook bash)"
 
-export PATH="/home/elpatatone/.local/bin:/home/elpatatone/.local/scripts:$PATH"
+export PATH="/home/elpatatone/.local/bin:/home/elpatatone/.local/scripts:/home/elpatatone/Documents/alleno-ora/src:$PATH"
 
 conda config --set auto_activate_base false
 
