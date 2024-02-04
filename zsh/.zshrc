@@ -51,6 +51,7 @@ alias j="jupyter-notebook"
 #this is a script for making new tmux sessions
 alias tn="$HOME/.local/scripts/tmux-sessions.sh"
 alias repo="$HOME/.local/scripts/repo-setup.sh"
+alias add="$HOME/.local/scripts/clone-repo.sh"
 # alias alleno="cd $HOME/Documents/alleno-ora/src && ./alleno && cd -"
 source "$HOME/.local/scripts/alleno.sh"
 
