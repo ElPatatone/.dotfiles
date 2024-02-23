@@ -19,7 +19,6 @@ compinit
 # generate and source plugins from ~/.zsh_plugins.txt
 antidote load
 
-
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
@@ -37,15 +36,6 @@ alias sd='cd "$(find ~/Documents -type d | fzf)"'
 alias n="cd ~/.dotfiles/nvim/.config/nvim"
 alias d="cd ~/.dotfiles"
 alias u="cd ~/.dotfiles/nvim/.config/nvim/lua/user"
-#conda
-alias ca="conda activate"
-alias dc="conda deactivate"
-alias cc="conda create --name"
-alias cr="conda env remove --name"
-alias ce="conda env list"
-alias cl="conda list"
-alias ci="conda install"
-alias j="jupyter-notebook"
 
 
 #this is a script for making new tmux sessions
@@ -56,18 +46,14 @@ alias add="$HOME/.local/scripts/clone-repo.sh"
 source "$HOME/.local/scripts/alleno.sh"
 
 #git commands
-alias gf="git fork"
 alias gs="git status"
 alias ga="git add"
 alias gc="git commit"
-alias gcm="git commit -m"
 alias gco="git checkout"
 alias gb="git branch"
 alias gcb="git checkout -b"
 alias gp="git push"
 alias gl="git log"
-alias gcl="git clone"
-alias gpl="git pull"
 alias gll="git log --oneline"
 alias gd="git diff"
 alias gdel="git branch -D"
