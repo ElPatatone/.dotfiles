@@ -27,7 +27,6 @@ antidote load
 alias vim="nvim"
 alias ls="ls -la"
 alias c="clear"
-alias zr="source .zshrc"
 
 #fzf through files
 alias sd='cd "$(find ~/Documents -type d | fzf)"'
@@ -42,7 +41,6 @@ alias u="cd ~/.dotfiles/nvim/.config/nvim/lua/user"
 alias tn="$HOME/.local/scripts/tmux-sessions.sh"
 alias repo="$HOME/.local/scripts/repo-setup.sh"
 alias add="$HOME/.local/scripts/clone-repo.sh"
-# alias alleno="cd $HOME/Documents/alleno-ora/src && ./alleno && cd -"
 source "$HOME/.local/scripts/alleno.sh"
 
 #git commands
@@ -59,10 +57,7 @@ alias gd="git diff"
 alias gdel="git branch -D"
 alias glf=" git log --graph --pretty=format:'%C(italic yellow)%ad%Creset %C(green)<%an> %C(bold magenta)%h%Creset -%C(auto)%d %Creset %s %Creset' --date=format-local:'%Y-%m-%d %H:%M (%a)'"
 
-alias b="./build.sh"
-# alias alleno="cd ~/Documents/alleno-ora/src && ./alleno && cd -"
 alias trova="cd ~/Documents/trova-git/build && ./trova && cd -"
-
 
 #zsh-autosuggestions keybind
 bindkey '^ ' autosuggest-accept
