@@ -91,7 +91,7 @@ unset __conda_setup
 # <<< conda initialize <<<
 eval "$(direnv hook bash)"
 
-export PATH="/home/elpatatone/.local/bin:/home/elpatatone/.local/scripts:/home/elpatatone/Documents/alleno-ora/src:$PATH"
+export PATH="/home/elpatatone/.local/bin:/home/elpatatone/.local/scripts:/home/elpatatone/Programming/alleno-ora/src:$PATH"
 
 conda config --set auto_activate_base false
 

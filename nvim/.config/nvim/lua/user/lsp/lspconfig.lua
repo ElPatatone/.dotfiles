@@ -126,6 +126,7 @@ lspconfig["clangd"].setup({
 		"--background-index",
 		"--pch-storage=memory",
 		"--clang-tidy",
+		"--offset-encoding=utf-16",
 		"--all-scopes-completion",
 		"--pretty",
 		-- "--header-insertion=never",
