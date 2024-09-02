@@ -4,11 +4,9 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-
 #fix the compdef error 
 autoload -Uz compinit
 compinit
-
 
 #get antidote
 [[ -e ~/.antidote ]] || git clone https://github.com/mattmc3/antidote.git ~/.antidote
@@ -38,10 +36,11 @@ alias u="cd ~/.dotfiles/nvim/.config/nvim/lua/user"
 
 
 #this is a script for making new tmux sessions
-alias tn="$HOME/.local/scripts/tmux-sessions.sh"
-alias repo="$HOME/.local/scripts/repo-setup.sh"
-alias add="$HOME/.local/scripts/clone-repo.sh"
-source "$HOME/.local/scripts/alleno.sh"
+# alias tn="$HOME/.local/scripts/tmux-sessions.sh"
+# alias repo="$HOME/.local/scripts/repo-setup.sh"
+# alias add="$HOME/.local/scripts/clone-repo.sh"
+
+# source "$HOME/.local/scripts/alleno.sh"
 
 #git commands
 alias gs="git status"
@@ -57,7 +56,7 @@ alias gd="git diff"
 alias gdel="git branch -D"
 alias glf=" git log --graph --pretty=format:'%C(italic yellow)%ad%Creset %C(green)<%an> %C(bold magenta)%h%Creset -%C(auto)%d %Creset %s %Creset' --date=format-local:'%Y-%m-%d %H:%M (%a)'"
 
-alias trova="cd ~/Documents/trova-git/build && ./trova && cd -"
+alias trova="cd ~/Programming/trova-git/build && ./trova && cd -"
 
 #zsh-autosuggestions keybind
 bindkey '^ ' autosuggest-accept
