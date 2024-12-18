@@ -2,7 +2,6 @@ local status_ok, lualine = pcall(require, "lualine")
 if not status_ok then
 	return
 end
-
 local colors = {
 	blue = "#80a0ff",
 	cyan = "#79dac8",

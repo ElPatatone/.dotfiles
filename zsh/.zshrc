@@ -78,7 +78,7 @@ export NVM_DIR="$HOME/.nvm"
 export CARGO_HOME="/home/elpatatone/software/.cargo"
 export RUSTUP_HOME="/home/elpatatone/software/.rustup"
 
-export PATH="/home/elpatatone/.local/bin:/home/elpatatone/.local/scripts:/home/elpatatone/Programming/alleno-ora/src:/$CARGO_HOME/bin:$PATH"
+export PATH="/home/elpatatone/.local/bin:/home/elpatatone/.local/scripts:/home/elpatatone/Programming/alleno-ora/src:/$CARGO_HOME/bin:/opt/nvim/:$PATH"
 
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
