@@ -66,6 +66,7 @@ bindkey ']' history-substring-search-down
 
 #this is for zsh autcompletion
 zstyle -e ':autocomplete:list-choices:*' list-lines 'reply=( $(( LINES / 3 )) )'
+
 #settings 
 unsetopt BEEP
 
