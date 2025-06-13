@@ -2,7 +2,6 @@ local setup, null_ls = pcall(require, "null-ls")
 if not setup then
 	return
 end
-
 local formatting = null_ls.builtins.formatting -- to setup formatters
 local diagnostics = null_ls.builtins.diagnostics -- to setup linters
 
@@ -17,8 +16,7 @@ null_ls.setup({
 		--  "formatting.prettier.with({disabled_filetypes = {}})" (see null-ls docs)
 		formatting.prettier, -- js/ts formatter
 		formatting.stylua, -- lua formatter
-		null_ls.builtins.formatting.clang_format,
-		formatting.phpcsfixer,
+		-- null_ls.builtins.formatting.clang_format,
 		diagnostics.eslint_d.with({ -- js/ts linter
 			-- only enable eslint if root has .eslintrc.js (not in youtube nvim video)
 			condition = function(utils)

@@ -27,6 +27,7 @@ mason_lspconfig.setup({
 		"emmet_ls",
 		"rust_analyzer",
 		"clangd",
+		-- "intelliphense",
 		"pyright",
 	},
 	-- auto-install configured servers (with lspconfig)
@@ -40,6 +41,7 @@ mason_null_ls.setup({
 		-- "clag-format",
 		"stylua", -- lua formatter
 		"eslint_d", -- ts/js linter
+		"pint",
 	},
 	-- auto-install configured formatters & linters (with null-ls)
 	automatic_installation = true,

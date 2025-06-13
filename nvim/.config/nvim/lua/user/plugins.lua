@@ -157,6 +157,15 @@ return packer.startup(function(use)
       ]])
 		end,
 	})
+
+	use({
+		"ricardoramirezr/blade-nav.nvim",
+		dependencies = {
+			"hrsh7th/nvim-cmp",
+		},
+		ft = { "blade", "php" },
+	})
+
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
 	if PACKER_BOOTSTRAP then

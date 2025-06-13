@@ -67,6 +67,8 @@ bindkey ']' history-substring-search-down
 #this is for zsh autcompletion
 zstyle -e ':autocomplete:list-choices:*' list-lines 'reply=( $(( LINES / 3 )) )'
 
+# export CLANGD_FLAGS="-I/usr/include/c++/11"
+
 #settings 
 unsetopt BEEP
 
@@ -86,3 +88,5 @@ export PATH="/home/elpatatone/.local/bin:/home/elpatatone/.local/scripts:/home/e
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
+export PATH="/home/elpatatone/.config/herd-lite/bin:$PATH"
+export PHP_INI_SCAN_DIR="/home/elpatatone/.config/herd-lite/bin:$PHP_INI_SCAN_DIR"
