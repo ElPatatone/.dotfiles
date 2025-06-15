@@ -28,8 +28,9 @@ alias vim="nvim" alias ls="ls -la" alias c="clear"
 alias sd='cd "$(find ~/Documents -type d | fzf)"'
 
 #shortcut for a directory
-alias n="cd ~/.dotfiles/nvim/.config/nvim" alias d="cd ~/.dotfiles" alias u="cd 
-~/.dotfiles/nvim/.config/nvim/lua/user"
+alias n="cd ~/.dotfiles/nvim/.config/nvim" 
+alias d="cd ~/.dotfiles" 
+alias u="cd ~/.dotfiles/nvim/.config/nvim/lua/user"
 
 
 #this is a script for making new tmux sessions alias 
