@@ -57,7 +57,7 @@ return packer.startup(function(use)
 		},
 	})
 	-- nicer nvim
-	use({ "lukas-reineke/indent-blankline.nvim", tag = "2.20.8" })
+    -- use({ "lukas-reineke/indent-blankline.nvim", tag = "2.20.8" })
 	use("nvim-lualine/lualine.nvim")
 	use("akinsho/bufferline.nvim")
 	use("norcalli/nvim-colorizer.lua")
@@ -148,23 +148,22 @@ return packer.startup(function(use)
 	use("jamespeapen/Nvim-R")
 
 	use({
-		"lervag/vimtex",
-		config = function()
-			vim.cmd([[
-        let g:vimtex_view_method = 'zathura'
-        let g:tex_flavor= 'latex'
-        set conceallevel=1
-      ]])
-		end,
-	})
+        "lervag/vimtex",
+        lazy = false,     -- we don't want to lazy load VimTeX
+        -- tag = "v2.15", -- uncomment to pin to a specific release
+        init = function()
+        -- VimTeX configuration goes here, e.g.
+        -- vim.g.vimtex_view_method = "zathura"
+    end
+    })
 
-	use({
-		"ricardoramirezr/blade-nav.nvim",
-		dependencies = {
-			"hrsh7th/nvim-cmp",
-		},
-		ft = { "blade", "php" },
-	})
+	-- use({
+	-- 	"ricardoramirezr/blade-nav.nvim",
+	-- 	dependencies = {
+	-- 		"hrsh7th/nvim-cmp",
+	-- 	},
+	-- 	ft = { "blade", "php" },
+	-- })
 
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins

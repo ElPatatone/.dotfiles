@@ -19,7 +19,7 @@ mason.setup()
 mason_lspconfig.setup({
 	-- list of servers for mason to install
 	ensure_installed = {
-		"ts_ls",
+		-- "tsserver",
 		"html",
 		"cssls",
 		"tailwindcss",
@@ -27,7 +27,6 @@ mason_lspconfig.setup({
 		"emmet_ls",
 		"rust_analyzer",
 		"clangd",
-		-- "intelliphense",
 		"pyright",
 	},
 	-- auto-install configured servers (with lspconfig)

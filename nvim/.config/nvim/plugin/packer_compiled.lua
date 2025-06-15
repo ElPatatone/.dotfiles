@@ -49,8 +49,8 @@ local function save_profiles(threshold)
 end
 
 time([[Luarocks path setup]], true)
-local package_path_str = "/home/elpatatone/.cache/nvim/packer_hererocks/2.1.1713484068/share/lua/5.1/?.lua;/home/elpatatone/.cache/nvim/packer_hererocks/2.1.1713484068/share/lua/5.1/?/init.lua;/home/elpatatone/.cache/nvim/packer_hererocks/2.1.1713484068/lib/luarocks/rocks-5.1/?.lua;/home/elpatatone/.cache/nvim/packer_hererocks/2.1.1713484068/lib/luarocks/rocks-5.1/?/init.lua"
-local install_cpath_pattern = "/home/elpatatone/.cache/nvim/packer_hererocks/2.1.1713484068/lib/lua/5.1/?.so"
+local package_path_str = "/home/elpatatone/.cache/nvim/packer_hererocks/2.1.0-beta3/share/lua/5.1/?.lua;/home/elpatatone/.cache/nvim/packer_hererocks/2.1.0-beta3/share/lua/5.1/?/init.lua;/home/elpatatone/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/luarocks/rocks-5.1/?.lua;/home/elpatatone/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/luarocks/rocks-5.1/?/init.lua"
+local install_cpath_pattern = "/home/elpatatone/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/lua/5.1/?.so"
 if not string.find(package.path, package_path_str, 1, true) then
   package.path = package.path .. ';' .. package_path_str
 end
@@ -88,13 +88,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/elpatatone/.local/share/nvim/site/pack/packer/start/Nvim-R",
     url = "https://github.com/jamespeapen/Nvim-R"
-  },
-  ["blade-nav.nvim"] = {
-    loaded = false,
-    needs_bufread = true,
-    only_cond = false,
-    path = "/home/elpatatone/.local/share/nvim/site/pack/packer/opt/blade-nav.nvim",
-    url = "https://github.com/ricardoramirezr/blade-nav.nvim"
   },
   ["bufferline.nvim"] = {
     loaded = true,
@@ -145,11 +138,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/elpatatone/.local/share/nvim/site/pack/packer/start/harpoon",
     url = "https://github.com/theprimeagen/harpoon"
-  },
-  ["indent-blankline.nvim"] = {
-    loaded = true,
-    path = "/home/elpatatone/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",
-    url = "https://github.com/lukas-reineke/indent-blankline.nvim"
   },
   ["jellybeans-nvim"] = {
     loaded = true,
@@ -312,7 +300,6 @@ _G.packer_plugins = {
     url = "https://github.com/bluz71/vim-moonfly-colors"
   },
   vimtex = {
-    config = { "\27LJ\2\n”\1\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0u        let g:vimtex_view_method = 'zathura'\n        let g:tex_flavor= 'latex'\n        set conceallevel=1\n      \bcmd\bvim\0" },
     loaded = true,
     path = "/home/elpatatone/.local/share/nvim/site/pack/packer/start/vimtex",
     url = "https://github.com/lervag/vimtex"
@@ -330,18 +317,6 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: vimtex
-time([[Config for vimtex]], true)
-try_loadstring("\27LJ\2\n”\1\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0u        let g:vimtex_view_method = 'zathura'\n        let g:tex_flavor= 'latex'\n        set conceallevel=1\n      \bcmd\bvim\0", "config", "vimtex")
-time([[Config for vimtex]], false)
-vim.cmd [[augroup packer_load_aucmds]]
-vim.cmd [[au!]]
-  -- Filetype lazy-loads
-time([[Defining lazy-load filetype autocommands]], true)
-vim.cmd [[au FileType php ++once lua require("packer.load")({'blade-nav.nvim'}, { ft = "php" }, _G.packer_plugins)]]
-vim.cmd [[au FileType blade ++once lua require("packer.load")({'blade-nav.nvim'}, { ft = "blade" }, _G.packer_plugins)]]
-time([[Defining lazy-load filetype autocommands]], false)
-vim.cmd("augroup END")
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then
