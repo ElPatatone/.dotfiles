@@ -5,8 +5,9 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   then source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-#fix the compdef error
-autoload -Uz compinit compinit
+#fix the compdef error 
+autoload -Uz compinit
+compinit
 
 #get antidote
 [[ -e ~/.antidote ]] || git clone https://github.com/mattmc3/antidote.git ~/.antidote
@@ -33,11 +34,10 @@ alias d="cd ~/.dotfiles"
 alias u="cd ~/.dotfiles/nvim/.config/nvim/lua/user"
 
 
-#this is a script for making new tmux sessions alias 
-# tn="$HOME/.local/scripts/tmux-sessions.sh" alias 
-# repo="$HOME/.local/scripts/repo-setup.sh" alias 
-# add="$HOME/.local/scripts/clone-repo.sh"
-
+#this is a script for making new tmux sessions
+# alias tn="$HOME/.local/scripts/tmux-sessions.sh"
+# alias repo="$HOME/.local/scripts/repo-setup.sh"
+# alias add="$HOME/.local/scripts/clone-repo.sh"
 # source "$HOME/.local/scripts/alleno.sh"
 
 #git commands
