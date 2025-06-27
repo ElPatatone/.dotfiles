@@ -11,7 +11,6 @@ require("nvim-treesitter.configs").setup({
 		"css",
 		"scss",
 		"php_only",
-		"blade",
 	},
 	sync_install = false,
 	auto_install = true,
