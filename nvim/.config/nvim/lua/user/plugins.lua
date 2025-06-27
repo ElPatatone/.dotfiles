@@ -1,5 +1,7 @@
 local fn = vim.fn
 
+vim.g.vimtex_view_method = "zathura"
+
 -- Automatically install packer
 local install_path = fn.stdpath("data") .. "/site/pack/packer/start/packer.nvim"
 if fn.empty(fn.glob(install_path)) > 0 then
@@ -89,16 +91,16 @@ return packer.startup(function(use)
 	use("tpope/vim-fugitive")
 
 	--colorschemes
-	use("ellisonleao/gruvbox.nvim")
-	use("bluz71/vim-moonfly-colors")
-	use("bignimbus/pop-punk.vim")
-	use("ElPatatone/viola-vim")
 	use("windwp/nvim-ts-autotag")
-	use("owickstrom/vim-colors-paramount")
+	use("ellisonleao/gruvbox.nvim")
+	use("ElPatatone/viola-vim")
+    use("alejandrolaguna20/noctis.nvim")
+    
+    -- new colorschemes
+    use("vague2k/vague.nvim")
+    use("metalelf0/black-metal-theme-neovim")
+    use("dgox16/oldworld.nvim")
 
-	use({ "rktjmp/lush.nvim" })
-	use({ "metalelf0/jellybeans-nvim" })
-	use({ "arthurealike/vim-J" })
 	--markdown
 	use({
 		"iamcco/markdown-preview.nvim",
@@ -151,10 +153,10 @@ return packer.startup(function(use)
         "lervag/vimtex",
         lazy = false,     -- we don't want to lazy load VimTeX
         -- tag = "v2.15", -- uncomment to pin to a specific release
-        init = function()
+        config = function()
         -- VimTeX configuration goes here, e.g.
-        -- vim.g.vimtex_view_method = "zathura"
-    end
+           vim.g.vimtex_view_method = "zathura"
+       end
     })
 
 	-- use({

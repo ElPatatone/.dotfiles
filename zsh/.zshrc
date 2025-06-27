@@ -72,7 +72,8 @@ export NVM_DIR="$HOME/.nvm"
 export CARGO_HOME="/home/elpatatone/software/.cargo" export 
 RUSTUP_HOME="/home/elpatatone/software/.rustup"
 
-export PATH="$PATH:/opt/nvim-linux-x86_64/bin"
+export GEM_HOME="$HOME/gems"
+export PATH="$PATH:/opt/nvim-linux-x86_64/bin:/$HOME/gems/bin"
 
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
