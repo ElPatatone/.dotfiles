@@ -229,11 +229,6 @@ _G.packer_plugins = {
     path = "/home/elpatatone/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
     url = "https://github.com/kyazdani42/nvim-web-devicons"
   },
-  ["oldworld.nvim"] = {
-    loaded = true,
-    path = "/home/elpatatone/.local/share/nvim/site/pack/packer/start/oldworld.nvim",
-    url = "https://github.com/dgox16/oldworld.nvim"
-  },
   ["packer.nvim"] = {
     loaded = true,
     path = "/home/elpatatone/.local/share/nvim/site/pack/packer/start/packer.nvim",
@@ -268,11 +263,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/elpatatone/.local/share/nvim/site/pack/packer/start/undotree",
     url = "https://github.com/mbbill/undotree"
-  },
-  ["vague.nvim"] = {
-    loaded = true,
-    path = "/home/elpatatone/.local/share/nvim/site/pack/packer/start/vague.nvim",
-    url = "https://github.com/vague2k/vague.nvim"
   },
   ["vim-fugitive"] = {
     loaded = true,

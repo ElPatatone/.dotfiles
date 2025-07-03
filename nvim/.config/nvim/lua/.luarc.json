@@ -2,5 +2,8 @@
     "diagnostics.globals": [
         "vim",
         "opts"
+    ],
+    "diagnostics.disable": [
+        "deprecated"
     ]
 }

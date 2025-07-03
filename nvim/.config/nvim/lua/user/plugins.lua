@@ -90,16 +90,15 @@ return packer.startup(function(use)
 	use("mbbill/undotree")
 	use("tpope/vim-fugitive")
 
-	--colorschemes
 	use("windwp/nvim-ts-autotag")
+    --
+	--colorschemes
 	use("ellisonleao/gruvbox.nvim")
 	use("ElPatatone/viola-vim")
     use("alejandrolaguna20/noctis.nvim")
     
     -- new colorschemes
-    use("vague2k/vague.nvim")
     use("metalelf0/black-metal-theme-neovim")
-    use("dgox16/oldworld.nvim")
 
 	--markdown
 	use({

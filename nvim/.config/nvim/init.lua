@@ -17,3 +17,5 @@ require("user.lsp.lspconfig")
 require("user.lsp.lspsaga")
 require("user.lsp.null-ls")
 require("user.lsp.nvim-r")
+require("user.gitsigns")
+
