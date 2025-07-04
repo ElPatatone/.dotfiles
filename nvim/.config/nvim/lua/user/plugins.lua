@@ -96,6 +96,9 @@ return packer.startup(function(use)
 	use("ellisonleao/gruvbox.nvim")
 	use("ElPatatone/viola-vim")
     use("alejandrolaguna20/noctis.nvim")
+    use("blazkowolf/gruber-darker.nvim")
+    use('projekt0n/github-nvim-theme')
+
     
     -- new colorschemes
     use("metalelf0/black-metal-theme-neovim")
