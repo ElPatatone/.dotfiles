@@ -122,12 +122,6 @@ require("black-metal").setup({
   --   purple = "#817faf",  -- new purple for diagnostic red
   --   orange = "#ff8800",
   -- },
-  highlights = {
-    ["@diag_red"] = { fg = "$diag_red" },
-    ["@alt"] = { fg = "$alt" },
-    ["@diag_yellow"] = { fg = "$diag_yellow" },
-    ["@keyword"] = { fg = "$keyword" },
-  },
 })
 -- Convenience function that simply calls `:colorscheme <theme>` with the theme
 -- specified in your config.
