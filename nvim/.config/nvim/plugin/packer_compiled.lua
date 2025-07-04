@@ -244,6 +244,11 @@ _G.packer_plugins = {
     path = "/home/elpatatone/.local/share/nvim/site/pack/packer/start/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
   },
+  ["placeholder.nvim"] = {
+    loaded = true,
+    path = "/home/elpatatone/.local/share/nvim/site/pack/packer/start/placeholder.nvim",
+    url = "/home/elpatatone/Programming/placeholder.nvim"
+  },
   ["plenary.nvim"] = {
     loaded = true,
     path = "/home/elpatatone/.local/share/nvim/site/pack/packer/start/plenary.nvim",

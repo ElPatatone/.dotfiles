@@ -32,7 +32,12 @@ local on_attach = function(client, bufnr)
 	-- keymap.set("n", "<leader>d", "<cmd>Lspsaga show_cursor_diagnostics<CR>", opts) -- show diagnostics for cursor
 	-- -- keymap.set("n", "K", "<cmd>Lspsaga hover_doc<CR>", opts) -- show documentation for what is under cursor
 	keymap.set("n", "<leader>o", "<cmd>LSoutlineToggle<CR>", opts) -- see outline on right hand side
-    vim.diagnostic.config({ virtual_text = true })
+    vim.diagnostic.config({
+        virtual_text = true,
+        underline = {
+            severity = vim.diagnostic.severity.HINT,
+        },
+    })
     -- vim.lsp.inlay_hint.enable(true, bufnr)
 end
 

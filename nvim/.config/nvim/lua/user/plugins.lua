@@ -99,7 +99,7 @@ return packer.startup(function(use)
     use("blazkowolf/gruber-darker.nvim")
     use('projekt0n/github-nvim-theme')
 
-    
+    use "~/Programming/placeholder.nvim"
     -- new colorschemes
     use("metalelf0/black-metal-theme-neovim")
 
@@ -164,6 +164,7 @@ return packer.startup(function(use)
            vim.g.vimtex_view_method = "zathura"
        end
     })
+
 
 	-- use({
 	-- 	"ricardoramirezr/blade-nav.nvim",
