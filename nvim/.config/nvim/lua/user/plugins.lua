@@ -98,8 +98,8 @@ return packer.startup(function(use)
     use("alejandrolaguna20/noctis.nvim")
     use("blazkowolf/gruber-darker.nvim")
     use('projekt0n/github-nvim-theme')
+    use("psliwka/termcolors.nvim")
 
-    use "~/Programming/placeholder.nvim"
     -- new colorschemes
     use("metalelf0/black-metal-theme-neovim")
     use("amedoeyes/eyes.nvim")

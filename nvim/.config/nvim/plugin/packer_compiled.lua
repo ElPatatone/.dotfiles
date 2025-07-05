@@ -249,11 +249,6 @@ _G.packer_plugins = {
     path = "/home/elpatatone/.local/share/nvim/site/pack/packer/start/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
   },
-  ["placeholder.nvim"] = {
-    loaded = true,
-    path = "/home/elpatatone/.local/share/nvim/site/pack/packer/start/placeholder.nvim",
-    url = "https://github.com//home/elpatatone/Programming/placeholder.nvim"
-  },
   ["plenary.nvim"] = {
     loaded = true,
     path = "/home/elpatatone/.local/share/nvim/site/pack/packer/start/plenary.nvim",
@@ -273,6 +268,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/elpatatone/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
+  },
+  ["termcolors.nvim"] = {
+    loaded = true,
+    path = "/home/elpatatone/.local/share/nvim/site/pack/packer/start/termcolors.nvim",
+    url = "https://github.com/psliwka/termcolors.nvim"
   },
   ["typescript.nvim"] = {
     loaded = true,
