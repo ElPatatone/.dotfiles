@@ -124,6 +124,11 @@ _G.packer_plugins = {
     path = "/home/elpatatone/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
+  ["eyes.nvim"] = {
+    loaded = true,
+    path = "/home/elpatatone/.local/share/nvim/site/pack/packer/start/eyes.nvim",
+    url = "https://github.com/amedoeyes/eyes.nvim"
+  },
   ["friendly-snippets"] = {
     loaded = true,
     path = "/home/elpatatone/.local/share/nvim/site/pack/packer/start/friendly-snippets",
@@ -247,7 +252,7 @@ _G.packer_plugins = {
   ["placeholder.nvim"] = {
     loaded = true,
     path = "/home/elpatatone/.local/share/nvim/site/pack/packer/start/placeholder.nvim",
-    url = "/home/elpatatone/Programming/placeholder.nvim"
+    url = "https://github.com//home/elpatatone/Programming/placeholder.nvim"
   },
   ["plenary.nvim"] = {
     loaded = true,

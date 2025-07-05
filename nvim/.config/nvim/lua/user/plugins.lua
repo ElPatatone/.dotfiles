@@ -102,6 +102,8 @@ return packer.startup(function(use)
     use "~/Programming/placeholder.nvim"
     -- new colorschemes
     use("metalelf0/black-metal-theme-neovim")
+    use("amedoeyes/eyes.nvim")
+
 
 	--markdown
 	use({
