@@ -31,6 +31,7 @@ end
 -- }
 --
 lualine.setup({
+    theme = "eyes",
 	options = {
 		icons_enabled = true,
 		component_separators = "|",

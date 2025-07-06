@@ -26,7 +26,7 @@ zstyle ':antidote:compatibility-mode' 'antibody' 'on'
 alias vim="nvim" alias ls="ls -la" alias c="clear"
 
 #fzf through files
-alias sd='cd "$(find ~/Documents -type d | fzf)"'
+alias sd='cd "$(find ~/Programming -type d | fzf)"'
 
 #shortcut for a directory
 alias n="cd ~/.dotfiles/nvim/.config/nvim" 
@@ -47,8 +47,6 @@ gl="git log" alias gll="git log --oneline" alias gd="git diff" alias gdel="git b
 -D" alias glf=" git log --graph --pretty=format:'%C(italic yellow)%ad%Creset 
 %C(green)<%an> %C(bold magenta)%h%Creset -%C(auto)%d %Creset %s %Creset' 
 --date=format-local:'%Y-%m-%d %H:%M (%a)'"
-
-alias trova="cd ~/Programming/trova-git/build && ./trova && cd -"
 
 #zsh-autosuggestions keybind
 bindkey '^ ' autosuggest-accept 

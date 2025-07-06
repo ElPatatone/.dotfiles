@@ -99,10 +99,13 @@ return packer.startup(function(use)
     use("blazkowolf/gruber-darker.nvim")
     use('projekt0n/github-nvim-theme')
     use("psliwka/termcolors.nvim")
+    use 'Mofiqul/vscode.nvim'
 
     -- new colorschemes
     use("metalelf0/black-metal-theme-neovim")
-    use("amedoeyes/eyes.nvim")
+    use({"amedoeyes/eyes.nvim"})
+    use("kdheepak/monochrome.nvim")
+    use("vague2k/vague.nvim")
 
 
 	--markdown

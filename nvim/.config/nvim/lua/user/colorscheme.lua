@@ -1,5 +1,8 @@
-local colorscheme = "eyes"
+local colorscheme = "vague"
 
 local status_ok, _ = pcall(vim.cmd, "colorscheme " .. colorscheme)
-if not status_ok then vim.notify("colorscheme " .. colorscheme .. " not found!") return
+if not status_ok then
+    vim.notify("colorscheme " .. colorscheme .. " not found!")
+    return
 end
+
