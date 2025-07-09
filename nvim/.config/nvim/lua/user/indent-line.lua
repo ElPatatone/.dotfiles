@@ -3,6 +3,7 @@ if not status_ok then
 	return
 end
 
+-- TODO:
 vim.opt.list = true
 -- vim.opt.listchars:append("space:⋅")
 

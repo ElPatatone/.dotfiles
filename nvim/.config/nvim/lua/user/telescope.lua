@@ -2,14 +2,12 @@ local status_ok, telescope = pcall(require, "telescope")
 if not status_ok then
 	return
 end
-
 local actions = require("telescope.actions")
 telescope.load_extension("media_files")
 local icons = require("user.icons")
 
 telescope.setup({
 	defaults = {
-
 		prompt_prefix = icons.ui.Telescope .. " ",
 		selection_caret = " ",
 		path_display = { "smart" },
@@ -156,11 +154,9 @@ telescope.setup({
 		},
 		find_files = {
 			theme = "dropdown",
-			previewer = false,
 		},
 		buffers = {
 			theme = "dropdown",
-			previewer = false,
 			initial_mode = "normal",
 		},
 		planets = {
@@ -196,6 +192,7 @@ telescope.setup({
 		-- builtin picker
 	},
 	extensions = {
+        fzf = {},
 		media_files = {
 			-- filetypes whitelist
 			-- defaults to {"png", "jpg", "mp4", "webm", "pdf"}

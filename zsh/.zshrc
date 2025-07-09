@@ -29,7 +29,7 @@ alias vim="nvim" alias ls="ls -la" alias c="clear"
 alias sd='cd "$(find ~/Programming -type d | fzf)"'
 
 #shortcut for a directory
-alias n="cd ~/.dotfiles/nvim/.config/nvim" 
+alias n="cd ~/Documents/notes" 
 alias d="cd ~/.dotfiles" 
 alias u="cd ~/.dotfiles/nvim/.config/nvim/lua/user"
 
