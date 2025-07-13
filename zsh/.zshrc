@@ -26,13 +26,26 @@ zstyle ':antidote:compatibility-mode' 'antibody' 'on'
 alias vim="nvim" alias ls="ls -la" alias c="clear"
 
 #fzf through files
-alias sd='cd "$(find ~/Programming -mindepth 1 -maxdepth 1 -type d | fzf)"'
+# alias sd='cd "$(find ~/Programming -mindepth 1 -maxdepth 1 -type d | fzf)"'
 
 #shortcut for a directory
 alias n="cd ~/Documents/notes" 
 alias d="cd ~/.dotfiles" 
 alias u="cd ~/.dotfiles/nvim/.config/nvim/lua/user"
 
+cdrepo() {
+    if [[ $# -eq 1 ]]; then
+        selected=$1
+    else
+        selected=$(find ~/Programming -maxdepth 1 -type d | fzf)
+    fi
+
+    if [[ -z $selected ]]; then
+        return 0
+    fi
+
+    cd "$selected"
+}
 
 #this is a script for making new tmux sessions
 # alias tn="$HOME/.local/scripts/tmux-sessions.sh"
@@ -71,7 +84,7 @@ export CARGO_HOME="/home/elpatatone/software/.cargo" export
 RUSTUP_HOME="/home/elpatatone/software/.rustup"
 
 export GEM_HOME="$HOME/gems"
-export PATH="$PATH:/opt/nvim-linux-x86_64/bin:/$HOME/gems/bin"
+export PATH="$PATH:/opt/nvim-linux-x86_64/bin:$HOME/gems/bin:$HOME/.local/scripts"
 
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
