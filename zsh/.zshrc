@@ -26,7 +26,7 @@ zstyle ':antidote:compatibility-mode' 'antibody' 'on'
 alias vim="nvim" alias ls="ls -la" alias c="clear"
 
 #fzf through files
-alias sd='cd "$(find ~/Programming -type d | fzf)"'
+alias sd='cd "$(find ~/Programming -mindepth 1 -maxdepth 1 -type d | fzf)"'
 
 #shortcut for a directory
 alias n="cd ~/Documents/notes" 
