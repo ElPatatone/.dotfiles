@@ -33,7 +33,7 @@ alias n="cd ~/Documents/notes"
 alias d="cd ~/.dotfiles" 
 alias u="cd ~/.dotfiles/nvim/.config/nvim/lua/user"
 
-cdrepo() {
+repo() {
     if [[ $# -eq 1 ]]; then
         selected=$1
     else
@@ -85,7 +85,8 @@ RUSTUP_HOME="/home/elpatatone/software/.rustup"
 
 export GEM_HOME="$HOME/gems"
 export PATH="$PATH:/opt/nvim-linux-x86_64/bin:$HOME/gems/bin:$HOME/.local/scripts"
-
+export PATH="$PATH:/usr/local/cuda-12.9/bin"
+export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/usr/local/cuda-12.9/lib64"
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
@@ -93,4 +94,3 @@ export SDKMAN_DIR="$HOME/.sdkman"
 typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
 export PATH="/home/elpatatone/.config/herd-lite/bin:$PATH"
 export PHP_INI_SCAN_DIR="/home/elpatatone/.config/herd-lite/bin:$PHP_INI_SCAN_DIR"
-

@@ -89,11 +89,6 @@ _G.packer_plugins = {
     path = "/home/elpatatone/.local/share/nvim/site/pack/packer/start/Nvim-R",
     url = "https://github.com/jamespeapen/Nvim-R"
   },
-  ["black-metal-theme-neovim"] = {
-    loaded = true,
-    path = "/home/elpatatone/.local/share/nvim/site/pack/packer/start/black-metal-theme-neovim",
-    url = "https://github.com/metalelf0/black-metal-theme-neovim"
-  },
   ["bufferline.nvim"] = {
     loaded = true,
     path = "/home/elpatatone/.local/share/nvim/site/pack/packer/start/bufferline.nvim",
@@ -124,35 +119,15 @@ _G.packer_plugins = {
     path = "/home/elpatatone/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
-  ["eyes.nvim"] = {
-    loaded = true,
-    path = "/home/elpatatone/.local/share/nvim/site/pack/packer/start/eyes.nvim",
-    url = "https://github.com/amedoeyes/eyes.nvim"
-  },
   ["friendly-snippets"] = {
     loaded = true,
     path = "/home/elpatatone/.local/share/nvim/site/pack/packer/start/friendly-snippets",
     url = "https://github.com/rafamadriz/friendly-snippets"
   },
-  ["github-nvim-theme"] = {
-    loaded = true,
-    path = "/home/elpatatone/.local/share/nvim/site/pack/packer/start/github-nvim-theme",
-    url = "https://github.com/projekt0n/github-nvim-theme"
-  },
   ["gitsigns.nvim"] = {
     loaded = true,
     path = "/home/elpatatone/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
     url = "https://github.com/lewis6991/gitsigns.nvim"
-  },
-  ["gruber-darker.nvim"] = {
-    loaded = true,
-    path = "/home/elpatatone/.local/share/nvim/site/pack/packer/start/gruber-darker.nvim",
-    url = "https://github.com/blazkowolf/gruber-darker.nvim"
-  },
-  ["gruvbox.nvim"] = {
-    loaded = true,
-    path = "/home/elpatatone/.local/share/nvim/site/pack/packer/start/gruvbox.nvim",
-    url = "https://github.com/ellisonleao/gruvbox.nvim"
   },
   harpoon = {
     loaded = true,
@@ -189,20 +164,10 @@ _G.packer_plugins = {
     path = "/home/elpatatone/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
   },
-  ["monochrome.nvim"] = {
-    loaded = true,
-    path = "/home/elpatatone/.local/share/nvim/site/pack/packer/start/monochrome.nvim",
-    url = "https://github.com/kdheepak/monochrome.nvim"
-  },
   ["neo-tree.nvim"] = {
     loaded = true,
     path = "/home/elpatatone/.local/share/nvim/site/pack/packer/start/neo-tree.nvim",
     url = "https://github.com/nvim-neo-tree/neo-tree.nvim"
-  },
-  ["noctis.nvim"] = {
-    loaded = true,
-    path = "/home/elpatatone/.local/share/nvim/site/pack/packer/start/noctis.nvim",
-    url = "https://github.com/alejandrolaguna20/noctis.nvim"
   },
   ["nui.nvim"] = {
     loaded = true,
@@ -274,11 +239,6 @@ _G.packer_plugins = {
     path = "/home/elpatatone/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
-  ["termcolors.nvim"] = {
-    loaded = true,
-    path = "/home/elpatatone/.local/share/nvim/site/pack/packer/start/termcolors.nvim",
-    url = "https://github.com/psliwka/termcolors.nvim"
-  },
   ["typescript.nvim"] = {
     loaded = true,
     path = "/home/elpatatone/.local/share/nvim/site/pack/packer/start/typescript.nvim",
@@ -288,11 +248,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/elpatatone/.local/share/nvim/site/pack/packer/start/undotree",
     url = "https://github.com/mbbill/undotree"
-  },
-  ["vague.nvim"] = {
-    loaded = true,
-    path = "/home/elpatatone/.local/share/nvim/site/pack/packer/start/vague.nvim",
-    url = "https://github.com/vague2k/vague.nvim"
   },
   ["vim-fugitive"] = {
     loaded = true,
@@ -304,11 +259,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/elpatatone/.local/share/nvim/site/pack/packer/start/vimtex",
     url = "https://github.com/lervag/vimtex"
-  },
-  ["viola-vim"] = {
-    loaded = true,
-    path = "/home/elpatatone/.local/share/nvim/site/pack/packer/start/viola-vim",
-    url = "https://github.com/ElPatatone/viola-vim"
   },
   ["vscode-es7-javascript-react-snippets"] = {
     loaded = true,
