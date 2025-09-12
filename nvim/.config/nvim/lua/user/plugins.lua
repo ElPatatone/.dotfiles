@@ -97,6 +97,7 @@ return packer.startup(function(use)
 	--colorschemes
 	use("ellisonleao/gruvbox.nvim")
     use 'Mofiqul/vscode.nvim'
+    use("bluz71/vim-moonfly-colors")
 
     -- new colorschemes
     use("metalelf0/black-metal-theme-neovim")
