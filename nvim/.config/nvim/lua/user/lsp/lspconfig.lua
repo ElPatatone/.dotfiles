@@ -121,6 +121,7 @@ lspconfig["clangd"].setup({
         "--header-insertion-decorators",
         "--function-arg-placeholders",
         "--completion-style=detailed",
+        "--query-driver=/usr/bin/clang++,/usr/local/cuda/bin/nvcc",
         -- "--background-index",
         -- "--pch-storage=memory",
         -- "--clang-tidy",
