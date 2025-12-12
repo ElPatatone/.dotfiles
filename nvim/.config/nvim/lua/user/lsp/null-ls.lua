@@ -2,6 +2,7 @@
 -- if not setup then
 -- 	return
 -- end
+--
 -- local formatting = null_ls.builtins.formatting -- to setup formatters
 -- local diagnostics = null_ls.builtins.diagnostics -- to setup linters
 --
@@ -11,7 +12,7 @@
 -- -- configure null_ls
 -- null_ls.setup({
 -- 	-- setup formatters & linters
--- 	sources = {
+-- 	    sources = {
 -- 		--  to disable file types use
 -- 		--  "formatting.prettier.with({disabled_filetypes = {}})" (see null-ls docs)
 -- 		formatting.prettier, -- js/ts formatter
