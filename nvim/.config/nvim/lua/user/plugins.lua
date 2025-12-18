@@ -98,6 +98,7 @@ return packer.startup(function(use)
 	use("ellisonleao/gruvbox.nvim")
     use 'Mofiqul/vscode.nvim'
     use("bluz71/vim-moonfly-colors")
+    use("wtfox/jellybeans.nvim")
 
 	--markdown
 	use({
