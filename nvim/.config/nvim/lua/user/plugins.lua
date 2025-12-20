@@ -70,6 +70,9 @@ return packer.startup(function(use)
 
 	-- commenting
 	use("numToStr/Comment.nvim")
+    use({"folke/todo-comments.nvim",
+      dependencies = { "nvim-lua/plenary.nvim" }})
+	require("todo-comments").setup()
 
 	-- telescope
 	use({
@@ -95,11 +98,10 @@ return packer.startup(function(use)
 	use("windwp/nvim-ts-autotag")
 
 	--colorschemes
-	use("ellisonleao/gruvbox.nvim")
     use 'Mofiqul/vscode.nvim'
     use("bluz71/vim-moonfly-colors")
     use("wtfox/jellybeans.nvim")
-
+    use {'kdheepak/monochrome.nvim'}
 	--markdown
 	use({
 		"iamcco/markdown-preview.nvim",
@@ -107,6 +109,19 @@ return packer.startup(function(use)
 			vim.fn["mkdp#util#install"]()
 		end,
 	})
+
+    use({
+        'MeanderingProgrammer/render-markdown.nvim',
+        after = { 'nvim-treesitter' },
+        requires = { 'nvim-mini/mini.nvim', opt = true },            -- if you use the mini.nvim suite
+        -- requires = { 'nvim-mini/mini.icons', opt = true },        -- if you use standalone mini plugins
+        -- requires = { 'nvim-tree/nvim-web-devicons', opt = true }, -- if you prefer nvim-web-devicons
+        config = function()
+            require('render-markdown').setup({
+                enabled = false,
+            })
+        end,
+    })
 
 	--git
 	use("lewis6991/gitsigns.nvim")
@@ -149,19 +164,19 @@ return packer.startup(function(use)
 	-- use("jose-elias-alvarez/null-ls.nvim") -- configure formatters & linters
 	-- use("jayp0521/mason-null-ls.nvim") -- bridges gap b/w mason & null-ls
 
-	-- r development
+	-- r 
 	use("jamespeapen/Nvim-R")
 
+    -- latex
 	use({
         "lervag/vimtex",
         lazy = false,     -- we don't want to lazy load VimTeX
         -- tag = "v2.15", -- uncomment to pin to a specific release
         config = function()
-        -- VimTeX configuration goes here, e.g.
+        -- VimTeX configuration goes hre, e.g.
            vim.g.vimtex_view_method = "zathura"
        end
     })
-
 
 	-- use({
 	-- 	"ricardoramirezr/blade-nav.nvim",
