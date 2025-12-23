@@ -99,6 +99,8 @@ return packer.startup(function(use)
 
 	--colorschemes
     use 'Mofiqul/vscode.nvim'
+    use {'ElPatatone/viola-vim'}
+    use "owickstrom/vim-colors-paramount"
     use("bluz71/vim-moonfly-colors")
     use("wtfox/jellybeans.nvim")
     use {'kdheepak/monochrome.nvim'}

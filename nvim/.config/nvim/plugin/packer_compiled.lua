@@ -278,6 +278,11 @@ _G.packer_plugins = {
     path = "/home/elpatatone/.local/share/nvim/site/pack/packer/start/undotree",
     url = "https://github.com/mbbill/undotree"
   },
+  ["vim-colors-paramount"] = {
+    loaded = true,
+    path = "/home/elpatatone/.local/share/nvim/site/pack/packer/start/vim-colors-paramount",
+    url = "https://github.com/owickstrom/vim-colors-paramount"
+  },
   ["vim-fugitive"] = {
     loaded = true,
     path = "/home/elpatatone/.local/share/nvim/site/pack/packer/start/vim-fugitive",
@@ -293,6 +298,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/elpatatone/.local/share/nvim/site/pack/packer/start/vimtex",
     url = "https://github.com/lervag/vimtex"
+  },
+  ["viola-vim"] = {
+    loaded = true,
+    path = "/home/elpatatone/.local/share/nvim/site/pack/packer/start/viola-vim",
+    url = "https://github.com/ElPatatone/viola-vim"
   },
   ["vscode-es7-javascript-react-snippets"] = {
     loaded = true,
