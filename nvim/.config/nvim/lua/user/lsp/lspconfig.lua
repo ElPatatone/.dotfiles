@@ -45,16 +45,16 @@ for type, icon in pairs(signs) do
 end
 
 -- configure html server
-lspconfig["html"].setup({
+vim.lsp.config["html"] = {
     capabilities = capabilities,
     on_attach = on_attach,
-})
+}
 
--- configure html server
-lspconfig["pyright"].setup({
+-- configure python server
+vim.lsp.config["pyright"] = {
     capabilities = capabilities,
     on_attach = on_attach,
-})
+}
 
 -- configure html server
 -- lspconfig["intelephense"].setup({
@@ -64,34 +64,34 @@ lspconfig["pyright"].setup({
 -- configure typescript server with plugin
 
 -- configure css server
-lspconfig["cssls"].setup({
+vim.lsp.config("cssls", {
     capabilities = capabilities,
     on_attach = on_attach,
 })
 
 -- configure tailwindcss server
-lspconfig["tailwindcss"].setup({
+vim.lsp.config("tailwindcss", {
     capabilities = capabilities,
     on_attach = on_attach,
 })
 
 -- configure emmet language server
-lspconfig["emmet_ls"].setup({
+vim.lsp.config("emmet_ls", {
     capabilities = capabilities,
     on_attach = on_attach,
     filetypes = { "html", "typescriptreact", "javascriptreact", "css", "sass", "scss", "less", "svelte" },
 })
 
 -- configure lua server (with special settings)
-lspconfig["lua_ls"].setup({
+vim.lsp.config["lua_ls"] = {
     capabilities = capabilities,
     on_attach = on_attach,
     settings = { -- custom settings for lua
         Lua = {
             -- make the language server recognize "vim" global
-            diagnostics = {
-                globals = { "vim" },
-            },
+            -- diagnostics = {
+            --     globals = { "vim" },
+            -- },
             workspace = {
                 -- make language server aware of runtime files
                 library = {
@@ -104,9 +104,9 @@ lspconfig["lua_ls"].setup({
             },
         },
     },
-})
+}
 
-lspconfig["clangd"].setup({
+vim.lsp.config["clangd"] = {
     capabilities = capabilities,
     on_attach = on_attach,
     cmd = {
@@ -132,7 +132,23 @@ lspconfig["clangd"].setup({
         -- "-j=4",
         -- "--header-insertion-decorators",
     },
-    filetypes = { "c", "cpp", "objc", "objcpp", "cuda" },
-    root_dir = require("lspconfig").util.root_pattern("src"),
+
+    -- INFO: deprecrated
+    -- root_dir = require("lspconfig").util.root_pattern("src"),
+    filetypes = { 'c', 'cpp', 'objc', 'objcpp', 'cuda' },
+    root_markers = {
+        '.clangd',
+        '.clang-tidy',
+        '.clang-format',
+        'compile_commands.json',
+        'compile_flags.txt',
+        'configure.ac', -- AutoTools
+        '.git',
+      },
     -- init_options = { fallbackFlags = { "-std=c++2a" } },
-})
+}
+
+vim.lsp.enable("clangd")
+vim.lsp.enable("lua_ls")
+vim.lsp.enable("pyright")
+vim.lsp.enable("html")

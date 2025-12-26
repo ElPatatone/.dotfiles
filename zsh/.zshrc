@@ -80,6 +80,9 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
+# uv autocompletions
+eval "$(uv generate-shell-completion zsh)"
+
 export CARGO_HOME="/home/elpatatone/software/.cargo" export 
 RUSTUP_HOME="/home/elpatatone/software/.rustup"
 
@@ -94,3 +97,4 @@ export SDKMAN_DIR="$HOME/.sdkman"
 typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
 export PATH="/home/elpatatone/.config/herd-lite/bin:$PATH"
 export PHP_INI_SCAN_DIR="/home/elpatatone/.config/herd-lite/bin:$PHP_INI_SCAN_DIR"
+
