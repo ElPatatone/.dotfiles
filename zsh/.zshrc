@@ -63,8 +63,8 @@ gl="git log" alias gll="git log --oneline" alias gd="git diff" alias gdel="git b
 
 #zsh-autosuggestions keybind
 bindkey '^ ' autosuggest-accept 
-bindkey '[' history-substring-search-up 
-bindkey ']' history-substring-search-down
+# bindkey '[' history-substring-search-up 
+# bindkey ']' history-substring-search-down
 
 #this is for zsh autcompletion
 zstyle -e ':autocomplete:list-choices:*' list-lines 'reply=( $(( LINES / 3 )) )'

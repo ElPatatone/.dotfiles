@@ -282,7 +282,7 @@ schemes:
 # *SolarizedDark
 # *TomorrowNight
 
-colors: *Moonfly
+colors: *Monochrome
 
 #######################################
 ##       END OF COLOR SCHEMES        ##
