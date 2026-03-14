@@ -99,6 +99,7 @@ return packer.startup(function(use)
 	use("windwp/nvim-ts-autotag")
 
 	--colorschemes
+    use {'vague-theme/vague.nvim'}
     use 'Mofiqul/vscode.nvim'
     use {'ElPatatone/viola-vim'}
     use "owickstrom/vim-colors-paramount"
