@@ -75,6 +75,12 @@ vim.lsp.config("tailwindcss", {
     on_attach = on_attach,
 })
 
+-- configure tailwindcss server
+vim.lsp.config["rust_analyzer"] = {
+    capabilities = capabilities,
+    on_attach = on_attach,
+}
+
 -- configure emmet language server
 vim.lsp.config("emmet_ls", {
     capabilities = capabilities,
@@ -152,3 +158,4 @@ vim.lsp.enable("clangd")
 vim.lsp.enable("lua_ls")
 vim.lsp.enable("pyright")
 vim.lsp.enable("html")
+vim.lsp.enable("rust_analyzer")
