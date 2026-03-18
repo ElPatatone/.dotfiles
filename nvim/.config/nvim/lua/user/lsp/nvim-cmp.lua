@@ -16,6 +16,12 @@ vim.opt.completeopt = "menu,menuone,noselect"
 local cmp_select = { behavior = cmp.SelectBehavior.Select }
 
 cmp.setup({
+    formatting = {
+        format = function(_, vim_item)
+            vim_item.menu = ""
+            return vim_item
+        end
+    },
 	snippet = {
 		expand = function(args)
 			luasnip.lsp_expand(args.body)

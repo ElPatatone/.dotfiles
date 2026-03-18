@@ -136,6 +136,14 @@ return packer.startup(function(use)
 	use("hrsh7th/nvim-cmp")
 	use("hrsh7th/cmp-buffer")
 	use("hrsh7th/cmp-path")
+    use("hrsh7th/cmp-nvim-lsp") -- for autocompletion
+	use({
+		"glepnir/lspsaga.nvim",
+		requires = {
+			{ "nvim-tree/nvim-web-devicons" },
+			{ "nvim-treesitter/nvim-treesitter" },
+		},
+	}) -- enhanced lsp uis
 
 	--Snippets
 	use("L3MON4D3/LuaSnip")
@@ -153,14 +161,6 @@ return packer.startup(function(use)
             inlay_hints = { enabled = true },
         },
     })
-    use("hrsh7th/cmp-nvim-lsp") -- for autocompletion
-	use({
-		"glepnir/lspsaga.nvim",
-		requires = {
-			{ "nvim-tree/nvim-web-devicons" },
-			{ "nvim-treesitter/nvim-treesitter" },
-		},
-	}) -- enhanced lsp uis
 	use("jose-elias-alvarez/typescript.nvim") -- additional functionality for typescript server (e.g. rename file & update imports)
 	use("onsails/lspkind.nvim") -- vs-code like icons for autocompletion
 
