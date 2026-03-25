@@ -23,7 +23,16 @@ zstyle ':antidote:compatibility-mode' 'antibody' 'on'
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 #aliases system shortcuts
-alias vim="nvim" alias ls="ls -la" alias c="clear"
+alias vim="nvim" 
+alias ls="ls -la" 
+alias c="clear"
+alias bat="batcat"
+
+# nicer man pages
+mann ()
+{
+   man $1 | bat -l man -p 
+}
 
 #fzf through files
 # alias sd='cd "$(find ~/Programming -mindepth 1 -maxdepth 1 -type d | fzf)"'
